@@ -2,7 +2,7 @@ import React from 'react'
 import classes from './service.module.css'
 
 const Services= ()=>(
-    <section className={classes.services}>
+    <section id='services' className={classes.services}>
      <h2>What are we Offering?</h2>
     <div className={classes.services_content}>
         <article className={classes.services_content__article} >

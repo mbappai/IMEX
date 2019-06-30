@@ -1,0 +1,47 @@
+.about{
+    height: 80vh;
+    width: 100%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: azure
+}
+
+.about__header{
+    width: 80%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid black;
+    margin-top: 50px
+}
+.about__content{
+    width: 80%;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about__content__cards{
+    border:1px solid black;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%
+}
+
+.about__content__card{
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%
+}
+
+.about__content__card__figure{
+    border:1px solid black;
+    width:100%
+}
