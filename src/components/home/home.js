@@ -6,8 +6,6 @@ import Header from '../header/header'
 const Home=()=>{
     return(
         <section className={classes.home}>
-            {/* <div className={classes.home__body}> */}
-
             <Header/>
             
             <div className={classes.home__body__content}>

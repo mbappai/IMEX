@@ -29,22 +29,28 @@
 .footer__header__navigations{
     flex:3;
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
-
-.footer__header__navigations ul{
+.footer__header__navigations__container{
     width:50%;
-    list-style: none;
+    height: 100%
 }
 
-.footer__header__navigations ul li{
+.footer__header__navigations__container ul{
+    list-style: none;
+    box-sizing: border-box;
+    width: 100%;
+}
+.footer__header__navigations__container ul li{
     border: 1px solid black;
     box-sizing: border-box;
 }
 
-.footer__header__navigations ul li a{
+
+.footer__header__navigations__container ul li a{
     display: block;
     text-decoration: none;
-    /* padding:10px; */
     text-align: center;
 }
 

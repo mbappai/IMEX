@@ -1,10 +1,22 @@
 import React from 'react'
 import classes from './service.module.css'
+import Section from '../sharedComp/sections/sections'
 
 const Services= ()=>(
-    <section id='services' className={classes.services}>
-     <h2>What are we Offering?</h2>
-    <div className={classes.services_content}>
+    <Section
+    sectionId='services'
+    sectionStyles={classes.services}
+    headerStyles={classes.services_header}
+    bodyStyles={classes.services_content}
+    headerNode={  
+        <>  
+    <div className={classes.services_header}>
+    <h2>What are we Offering?</h2>
+    </div>
+    </>
+    }
+    bodyNode={
+        <div className={classes.services_content}>
         <article className={classes.services_content__article} >
             <h3>Shipping</h3>
             <p>Secure Imex manages the entire delivery process from the
@@ -46,7 +58,9 @@ const Services= ()=>(
             
         </article>
     </div>
-    </section>
+    }
+    />
+   
 )
 
 export default Services

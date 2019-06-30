@@ -11,6 +11,7 @@ const footer=()=>(
         <div><p>facebook and instagram</p></div>
         </section>
         <section className={classes.footer__header__navigations}>
+        <div className={classes.footer__header__navigations__container}>
         <h4>Navigations</h4>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -22,6 +23,8 @@ const footer=()=>(
             <li><a href="#about">About</a></li>
             <li><a href="contact">Contact</a></li>
         </ul>
+        </div>
+       
         </section>
         </div>
         <div className={classes.footer__content}> <a href="#awesome">Terms and Conditons.</a></div>
