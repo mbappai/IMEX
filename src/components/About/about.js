@@ -1,32 +1,61 @@
 import React from 'react'
 import classes from './about.module.css'
+import Image from '../image'
+import Section from '../sharedComp/sections/sections'
 
 const about=()=>(
-    <section className={classes.about}>
-        <div className={classes.about__header}>
-            <h2>Who are we exactly?</h2>
-            <h4>Our Mision</h4>
+    <Section
+    sectionStyles={classes.about}
+    headerStyles={classes.about__header}
+    bodyStyles={classes.about__content}
+    headerNode={
+        <>
+     <h2>Who are we exactly?</h2>
+        </>
+    }
+    bodyNode={
+        <>
+         
+        <section className={classes.about__content}>
+        <div className={classes.about__content_mission}>
+        <h4>Our Mision</h4>
+            <div className={classes.about__content_missionParagraph}>
             <p>As a result of the high number of fraud cases in Nigeria, we are dedicated
 to establish a safe and secure platform for Nigerians to buy goods from
 China. Furthermore, help businesses achieve their individual goals 
 of cutting cost and sourcing quality products.</p>
+            </div>
         </div>
-        <div className={classes.about__content}>
-        <h4>The team.</h4>
-        <section className={classes.about__content__cards}>
-            <article className={classes.about__content__card}>
-                <figure className={classes.about__content__card__figure}><img src="../../assets/pic3.jpg" alt="ceo"/></figure>
+       
+        
+        <section className={classes.about__content__cardsContainer}>
+        <header className={classes.about__content__cards_header}>
+        <h4>Founders.</h4>
+        </header>
+        <div className={classes.about__content__cards}>
+        <article className={classes.about__content__card}>
+                <figure className={classes.about__content__card__figure}><Image src='cake.png'/></figure>
+                <div className={classes.about__content__card__figure__labels}>
                 <h5>Usman Nakudu</h5>
-                <p>Founder, CEO</p>
+                <p>Founder</p>
+                </div>
             </article>
             <article className={classes.about__content__card}>
-                <figure className={classes.about__content__card__figure}><img src="../../assets/pic2.jpg" alt="coo"/></figure>
+                <figure className={classes.about__content__card__figure}><Image src='pic1.jpg'/></figure>
+                <div className={classes.about__content__card__figure__labels}>
                 <h5>Jamboree</h5>
-                <p>Co-Founder, COO</p>
+                <p>Co-Founder</p>
+                </div>
             </article>
-        </section>
         </div>
-    </section>
+           
+        </section>
+        </section>
+        </>
+
+    }
+    />
+    
 )
 
 export default about

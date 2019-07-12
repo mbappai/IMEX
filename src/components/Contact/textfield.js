@@ -4,12 +4,12 @@ import classes from './textfield.module.css'
 
 
 const input=props=>{
-  const inputClasses=[classes.inputElement]
- if(!props.isValid&&props.touched){inputClasses.push(classes.inValid)}
- if(props.isValid&&props.touched){inputClasses.push(classes.valid)}
+//   const inputClasses=[classes.inputElement]
+//  if(!props.isValid&&props.touched){inputClasses.push(classes.inValid)}
+//  if(props.isValid&&props.touched){inputClasses.push(classes.valid)}
  
     return(
-      <input className={inputClasses.join(' ')} type="text" name={props.name} placeholder={props.placeholder} onChange={props.onChangedHandler}/>
+      <input required valid={props.isValid} className={classes.input} type="text" name={props.name} placeholder={props.placeholder} onChange={props.onChangedHandler}/>
     )
 }
 

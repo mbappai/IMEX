@@ -1,0 +1,8 @@
+.section{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    /* grid-template-rows: repeat(12,10%); */
+    grid-auto-rows: minmax(70px,auto);
+    padding:40px;
+    border: 1px solid;
+}

@@ -15,7 +15,23 @@
     background-color: #ccc;
 }
 
+.input{
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: white;
+    font: inherit;
+    padding: 6px 10px;
+    display: block;
+    width: 80%;
+    box-sizing: border-box;
+}
 
+.input:valid{
+    border-bottom: green;
+}
+.input:invalid{
+    border-bottom: red;
+}
 .inValid{
     border:0;
     border-bottom: 2px solid red;

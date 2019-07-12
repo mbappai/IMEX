@@ -1,0 +1,21 @@
+
+.instaLink{
+    padding:0;
+    margin: 0;
+    padding:5px;
+    text-align: center;
+}
+
+.insta{
+    fill: black;
+    opacity: .5;
+    transition: opacity .3s ease-in-out;
+    width: 3.5vw
+}
+
+.instaLink:hover .insta{
+    fill: black;
+    opacity: 1;
+}
+
+

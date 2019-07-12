@@ -1,20 +1,29 @@
-import React from 'react'
-import Button from '../styledComp/button'
+import React ,{useState}from 'react'
+// import Button from '../styledComp/button'
 import classes from './home.module.css'
 import Header from '../header/header'
+import SideDrawer from '../sideDrawer/sideDrawer'
+
 
 const Home=()=>{
+    const [show, setShow]=useState(false)
+
+    const showSideBar=()=>{
+        setShow(!show)
+    }
+    const sideDrawer= show? <SideDrawer hideDrawer={showSideBar}/>: ''
+
     return(
+        <>
+        <Header showSideBar={showSideBar}/>
         <section className={classes.home}>
-            <Header/>
-            
+        {sideDrawer}
             <div className={classes.home__body__content}>
             <p>We make your purchase in China easier and safer.</p>
-            <Button>Explore</Button>
+            <button className={classes.button}><a  href="#services">Explore</a></button>
             </div>   
-            
-            {/* </div> */}
-        </section>
+        </section> 
+        </>
     )
 }
 

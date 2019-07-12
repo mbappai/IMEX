@@ -5,12 +5,13 @@ import Section from '../sharedComp/sections/sections'
 
 const Pricing =()=>(
     
-    <Section 
+    <Section
+    sectionId='pricing' 
     sectionStyles={classes.pricing}
     headerStyles={classes.pricing__header}
     bodyStyles={classes.pricing__content}
     headerNode={<>
-    <h2>Find the package that works best for you</h2>
+    <h2>Find the package that works for you</h2>
     <p>We are trying our very best to see that everyones needs gets catered for.</p>
 </>}
     bodyNode={
@@ -21,125 +22,61 @@ const Pricing =()=>(
         </header>
         <div className={classes.content__item__body}>
             <p className={classes.content__item__body__label}>order ranges</p>
-            <p className={classes.content__item__body__price}>$1000 - $3000</p>
+            <p className={classes.content__item__body__price}>$1500 - $2499</p>
             <p className={classes.content__item__body__perk}>factory inspection is optional for <span className={classes.perksPrice}>$200</span></p>
         </div>
         <footer className={classes.content__item__footer}>
             <p className={classes.content__item__footer__label}>fee</p>
-            <p className={classes.content__item__footer__price}>$70</p>
+            <p className={classes.content__item__footer__price}>$100</p>
         </footer>
         </article>
         <article className={classes.pricing__content__item}>
         <header className={classes.content__item__header}>
-            <h4>Bronze</h4>
+            <h4>Silver</h4>
         </header>
         <div className={classes.content__item__body}>
             <p className={classes.content__item__body__label}>order ranges</p>
-            <p className={classes.content__item__body__price}>$1000 - $3000</p>
+            <p className={classes.content__item__body__price}>$2500 - $3499</p>
             <p className={classes.content__item__body__perk}>factory inspection is optional for <span className={classes.perksPrice}>$200</span></p>
         </div>
         <footer className={classes.content__item__footer}>
             <p className={classes.content__item__footer__label}>fee</p>
-            <p className={classes.content__item__footer__price}>$70</p>
+            <p className={classes.content__item__footer__price}>$200</p>
         </footer>
         </article>
         <article className={classes.pricing__content__item}>
         <header className={classes.content__item__header}>
-            <h4>Bronze</h4>
+            <h4>Gold</h4>
         </header>
         <div className={classes.content__item__body}>
             <p className={classes.content__item__body__label}>order ranges</p>
-            <p className={classes.content__item__body__price}>$1000 - $3000</p>
+            <p className={classes.content__item__body__price}>$3500 - $9,999</p>
             <p className={classes.content__item__body__perk}>factory inspection is optional for <span className={classes.perksPrice}>$200</span></p>
         </div>
         <footer className={classes.content__item__footer}>
             <p className={classes.content__item__footer__label}>fee</p>
-            <p className={classes.content__item__footer__price}>$70</p>
+            <p className={classes.content__item__footer__price}>5%</p>
         </footer>
         </article>
         <article className={classes.pricing__content__item}>
         <header className={classes.content__item__header}>
-            <h4>Bronze</h4>
+            <h4>Platinum</h4>
         </header>
         <div className={classes.content__item__body}>
             <p className={classes.content__item__body__label}>order ranges</p>
-            <p className={classes.content__item__body__price}>$1000 - $3000</p>
-            <p className={classes.content__item__body__perk}>factory inspection is optional for <span className={classes.perksPrice}>$200</span></p>
+            <p className={classes.content__item__body__price}>$10,000></p>
+            <p className={classes.content__item__body__perk}>factory inspection is <span className={classes.perksPrice}>FREE</span></p>
         </div>
         <footer className={classes.content__item__footer}>
             <p className={classes.content__item__footer__label}>fee</p>
-            <p className={classes.content__item__footer__price}>$70</p>
+            <p className={classes.content__item__footer__price}>5%</p>
         </footer>
         </article>
         </>
     }
     />
     
-    // <section id='pricing' className={classes.pricing}>
-
-    //     <div className={classes.pricing__header}>
-    //         <h2>Find the package that works best for you</h2>
-    //         <p>We are trying our very best to see that everyones needs gets catered for.</p>
-    //     </div>
-    //     <div className={classes.pricing__content}>
-    //         <article className={classes.pricing__content__item}>
-    //         <header className={classes.content__item__header}>
-    //             <h4>Bronze</h4>
-    //         </header>
-    //         <div className={classes.content__item__body}>
-    //             <p className={classes.content__item__body__label}>order ranges</p>
-    //             <p className={classes.content__item__body__price}>$1000 - $3000</p>
-    //             <p className={classes.content__item__body__perk}>factory inspection is optional for <span className={classes.perksPrice}>$200</span></p>
-    //         </div>
-    //         <footer className={classes.content__item__footer}>
-    //             <p className={classes.content__item__footer__label}>fee</p>
-    //             <p className={classes.content__item__footer__price}>$70</p>
-    //         </footer>
-    //         </article>
-    //         <article className={classes.pricing__content__item}>
-    //         <header className={classes.content__item__header}>
-    //             <h4>Bronze</h4>
-    //         </header>
-    //         <div className={classes.content__item__body}>
-    //             <p className={classes.content__item__body__label}>order ranges</p>
-    //             <p className={classes.content__item__body__price}>$1000 - $3000</p>
-    //             <p className={classes.content__item__body__perk}>factory inspection is optional for <span className={classes.perksPrice}>$200</span></p>
-    //         </div>
-    //         <footer className={classes.content__item__footer}>
-    //             <p className={classes.content__item__footer__label}>fee</p>
-    //             <p className={classes.content__item__footer__price}>$70</p>
-    //         </footer>
-    //         </article>
-    //         <article className={classes.pricing__content__item}>
-    //         <header className={classes.content__item__header}>
-    //             <h4>Bronze</h4>
-    //         </header>
-    //         <div className={classes.content__item__body}>
-    //             <p className={classes.content__item__body__label}>order ranges</p>
-    //             <p className={classes.content__item__body__price}>$1000 - $3000</p>
-    //             <p className={classes.content__item__body__perk}>factory inspection is optional for <span className={classes.perksPrice}>$200</span></p>
-    //         </div>
-    //         <footer className={classes.content__item__footer}>
-    //             <p className={classes.content__item__footer__label}>fee</p>
-    //             <p className={classes.content__item__footer__price}>$70</p>
-    //         </footer>
-    //         </article>
-    //         <article className={classes.pricing__content__item}>
-    //         <header className={classes.content__item__header}>
-    //             <h4>Bronze</h4>
-    //         </header>
-    //         <div className={classes.content__item__body}>
-    //             <p className={classes.content__item__body__label}>order ranges</p>
-    //             <p className={classes.content__item__body__price}>$1000 - $3000</p>
-    //             <p className={classes.content__item__body__perk}>factory inspection is optional for <span className={classes.perksPrice}>$200</span></p>
-    //         </div>
-    //         <footer className={classes.content__item__footer}>
-    //             <p className={classes.content__item__footer__label}>fee</p>
-    //             <p className={classes.content__item__footer__price}>$70</p>
-    //         </footer>
-    //         </article>
-    //     </div>
-    // </section>
+    
 )
 
 export default Pricing

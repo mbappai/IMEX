@@ -15,9 +15,16 @@ body {
 :root{
 
   --header-fonts:5vw;
-  --subHeader-fonts:1vw;
-  --mainNav-link-fonts:1.8vw
+  --paragraph-fonts:1.5vw;
+  --mainNav-link-fonts:1.8vw;
+  --sideBar-link-font:5vw;
+  --description-font:1.7vw;
+  --primary-color:#039BE5;
+  --primary-light:#63CCFF;
+  --primary-dark:#006DB3;
+  --background-color:rgba(0,109,179,0.2)
 }
+
 article,
 aside,
 details,
@@ -31,6 +38,8 @@ nav,
 section,
 summary {
   display: block;
+  box-sizing: border-box;
+  margin:0
 }
 audio,
 canvas,
@@ -228,7 +237,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0;
 }
 h1 {
   margin-left: 0;
@@ -255,13 +264,13 @@ h2 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1rem;
   color: inherit;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  font-size: 3vw;
   line-height: 1.1;
 }
 h3 {
@@ -272,13 +281,13 @@ h3 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1rem;
   color: inherit;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
+  font-size: 1.3vw;
   line-height: 1.1;
 }
 h4 {
@@ -289,13 +298,13 @@ h4 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0.7rem;
   color: inherit;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1rem;
+  font-size: 1.5vw;
   line-height: 1.1;
   /* border:1px solid black */
 }
@@ -307,7 +316,7 @@ h5 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: .5rem;
   color: inherit;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -630,4 +639,25 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+
+.grid{
+  width: 100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-auto-rows: minmax(100%, auto);
+  height: 100%;
+  background-color: transparent;
+  padding: 0
+}
+
+.grid p{
+border: 1px solid;
+  margin: 0;
+  /* background-color: #000; */
+  opacity: 0.3
 }

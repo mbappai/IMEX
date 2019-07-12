@@ -1,69 +1,197 @@
 .contact{
-    height: 70vh;
     width: 100%;
     display:flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    background-color: moccasin;
+    /* background-color: moccasin; */
+    padding: 40px;
 }
 
 .contact__header{
-    width: 80%;
     display:flex;
     flex-direction: column;
     align-items: center;
-    border:1px solid black;
-    margin-top: 50px
+    /* border:1px solid black; */
+    padding:10px;
+    margin-bottom: 20px;
+}
+.contact__header h2{
+    font-size: 4.5vw;
+    margin-bottom: 1.5vw;
+}
+.contact__header_paragraph{
+        width: 100%;
+}
+.contact__header_paragraph p{
+    opacity:0.7;
+    text-align: center;
+    font-size: 3.5vw;
+    line-height: 3.7vw;
 }
 .contact__content{
-    width: 80%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    border: 1px solid black;
-    height: 50%;
-}
-
-.contact__content__details, .contact__content__form{
-    height: 100%;
-    width:50%;
     display:flex;
     flex-direction: column;
+    width: 100%;
+    /* margin-top: 10% */
+}
+
+.contact__content__details h4{
+    font-size: 3vw;
+    margin-bottom: 1vw;
+    color:white;
+}
+
+.contact__content__details_socials{
+    width:100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+}
+.contact__content__details_socials a{
+    text-decoration: none;
+    color: white;
+}
+.contact__content__details, .contact__content__form{
+    height: 50%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+.contact__content__details{
+    padding:20px;
+    align-items: center;
+    background-color: var(--primary-dark)
+}
+.contact__content__form{
+    -webkit-box-shadow: 3px 2px 11px -5px rgba(99,204,255,0.25);
+-moz-box-shadow: 3px 2px 11px -5px rgba(99,204,255,0.25);
+box-shadow: 3px 2px 11px -5px rgba(99,204,255,0.25);
 }
 
 .input{
     border:0;
     border-bottom: 2px solid black;
     width: 80%;
-    margin-top: 10px
+    margin-bottom: 5px;
+    background-color: none;
 }
 
 .formContainer{
     height: 100%;
-    width:80%;
+    width:100%;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    margin: auto 0;
+    padding:20px;
 }
-/* 
-input:invalid{
+
+.input:invalid{
     border-bottom: 2px solid red;
 }
 
-input:valid{
+.input:valid{
     border-bottom: 2px solid greenyellow;
-} */
+}
+
 .textarea{
     border:0;
     outline: none;
     border-bottom: 2px solid black;
     width: 80%;
+   
+}
+.formContainer__buttonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin:1vw;
+}
+
+.formContainer__button{
+    outline: none;
+    padding:.7vw;
+    border-radius: 2px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color:white;
+    background-color: var(--primary-dark)
+
+}
+
+@media all and (min-width:450px){
+    .contact{
+        width: 100%;
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        background-color: moccasin;
+    }
+    
+    .contact__header{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        border:1px solid black;
+        /* grid-column: 3/11;
+        grid-row: 1/2; */
+    }
+
+    .contact__header_paragraph{
+            width: 100%;
+    }
+    .contact__header_paragraph p{
+        font-size: var(--paragraph-fonts);
+        text-align: center;
+    }
+    .contact__content{
+        display:flex;
+        flex-direction: row;
+        width:100%;
+        
+    }
+ 
+    .contact__content__details_socials{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact__content__details, .contact__content__form{
+        height: 100%;
+        width:50%;
+        padding:0;
+    }
+
+    .contact__content__details{
+        justify-content: center;
+        padding:25px;
+
+    }
+    
+    .input{
+        border:0;
+        border-bottom: 2px solid black;
+        width: 80%;
+        margin-bottom: 5px;
+        background-color: none;
+         
+    }
+    
+    .formContainer{
+        height: 100%;
+        width:100%;
+        border: 1px solid black;
+        margin: auto 0
+    }
+    
+ 
    
 }

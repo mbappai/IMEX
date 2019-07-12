@@ -1,47 +1,90 @@
 .header{
-    width: 100vw;
-    height:10vh;
-    border: 1px solid black;
+    width: 83vw;
+    height:12vw;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-bottom: 20%
+
+    margin:0 auto;
+    float: inline-end;
+    /* position:fixed; */
 }
 
 .header__logo{
-    flex:3;
+    flex:5;
     display:flex;
     justify-content: flex-start;
     align-items: center;
+    /* height: 70px; */
 
 }
 .header__nav{
+    display: none;
+}
+.header__hamburger{
     display:flex;
-    justify-content: center;
-    flex:7;
+    justify-content: flex-end;
+    flex:5;
     height: 100%;
-    /* align-items: center; */
-    list-style: none;
-    border: 1px solid black;
-    margin:0;
-    padding:0
+    /* border: 1px solid black; */
 }
 
-.header__nav li{
-    border:1px solid black;
-    width:20%;
-    height: 100%;
-    padding:0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  
 
-.header__nav li a{
-    text-decoration: none;
-    display: block;
-   font-size: var(--mainNav-link-fonts);
-    text-align: center;
-    padding: 10px;
-    border:  1px solid red;
+@media screen and (min-width:600px){
+
+    .header{
+        height: 6vw;
+        margin-top: 2px;
+    }
+    
+    .header__logo{
+        flex:3;
+        justify-content: flex-start;
+        align-items: center;
+    
+    }
+    .header__nav{
+        display:flex;
+        justify-content: flex-end;
+        flex:7;
+        height: 100%;
+        /* align-items: center; */
+        list-style: none;
+        /* border: 1px solid black; */
+        margin:0;
+        padding:0
+    }
+    
+    .header__nav li{
+        /* border:1px solid black; */
+        width:20%;
+        height: 100%;
+        padding:0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header__nav li a{
+        text-decoration: none;
+        display: block;
+       font-size: var(--mainNav-link-fonts);
+        text-align: center;
+        padding: 1.2vw;
+        color:white;
+        transition: transform .1s ease-in-out
+        /* border:  1px solid red; */
+    }
+
+    .header__nav li a:hover {
+        transform: scale(1.1);
+        color: var(--primary-light)
+    }
+
+    .header__hamburger{
+        display:none;
+    }
+    
 }
