@@ -5,8 +5,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
-
-    margin:0 auto;
+    margin:20px auto auto;
     float: inline-end;
     /* position:fixed; */
 }
@@ -25,6 +24,7 @@
 .header__hamburger{
     display:flex;
     justify-content: flex-end;
+    align-items: center;
     flex:5;
     height: 100%;
     /* border: 1px solid black; */
@@ -74,7 +74,8 @@
         text-align: center;
         padding: 1.2vw;
         color:white;
-        transition: transform .1s ease-in-out
+        transition: transform .1s ease-in-out;
+        font-size: 2.5vw
         /* border:  1px solid red; */
     }
 

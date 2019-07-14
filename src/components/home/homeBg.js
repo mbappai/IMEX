@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import styled from 'styled-components'
 import Home from './home'
+import classes from './home.module.css'
 
 import BackgroundImage from 'gatsby-background-image'
 
@@ -26,6 +27,7 @@ const BackgroundSection = ({ className }) => (
                            fluid={imageData}
                            backgroundColor={`#040e18`}
           >
+          {/* <h1>Hello my name is mujeex</h1> */}
           <Home/>
           </BackgroundImage>
        )
@@ -40,7 +42,8 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   background-repeat: repeat-y;
   background-size: cover;
   height:100vh;
-  filter:blur(8px);
+  // filter:blur(8px);
+  z-index:1
 `
 
 export default StyledBackgroundSection

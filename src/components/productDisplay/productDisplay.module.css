@@ -10,7 +10,7 @@
     top:0;
     left:0;
     z-index:2;
-    background-color: whitesmoke;
+    background-color: var(--primary-dark);
 }
 
 .display_header{
@@ -21,19 +21,18 @@
 }
 .display_header h3{
     text-transform: capitalize;
-    font-size: 4vw
+    font-size: 8vw;
+    color:white
 }
 
-        .display_header__button{
-            border:2px solid black;
-            border-radius: 100%;
-            display: flex;
-            justify-content: center;
-            padding:10px;
-            font-size: 3vw;
+        .display_button{
             cursor: pointer;
-            margin: 0 0 0 240px
-           
+            margin: 0 0 0 240px;
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            top: 70vw;
+            right: 5vw;
         }
        
 .display_description{
@@ -43,47 +42,41 @@
 }
 .display_description p{
     width:100%;
-
+    color:white;
 }
 .display_list{
+    display: flex;
     width:80%;
-
+    flex-flow: column wrap;
+    margin-bottom: 0;
 }
+ .display_list li{
+     color:white;
+ }
+ 
 
 @media all and (min-width:500px){
     .display{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 100%;
         padding:40px;
         justify-content: center;
-        position: absolute;
-        top:0;
-        left:0;
-        z-index:2;
-        background-color: whitesmoke;
     }
     
     .display_header{
         display: flex;
         justify-content: space-between;
-        /* border:1px solid; */
         width:80%
     }
     .display_header h3{
-        text-transform: capitalize;
+       font-size: 4vw;
+       margin-bottom: 1vw
     }
-            .display_header__button{
-                border:2px solid black;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                padding:10px;
-                font-size: 2vw;
-                cursor: pointer;
-            }
+    .display_button{
+        height: 50px;
+        width: 50px;
+        top: 5vw;
+            right: 5vw;
+    }
+   
     .display_description{
         width: 80%;
         box-sizing: border-box;
@@ -96,5 +89,34 @@
     .display_list{
         width:80%;
     
+    }
+}
+
+@media all and (min-width:700px){
+    .display{
+        align-items: center;
+        padding:30px;
+        justify-content: center;
+        
+    }
+    .display_description{
+        margin: 10px 0 20px 0;
+    }
+    .display_button{
+        height: 50px;
+        width: 50px;
+        top: 3vw;
+        right: 10vw;
+    }
+    .display_list{
+        height: 60%;
+    }
+ 
+}
+
+@media all and (min-width:1000px){
+    .display{
+        align-items: center;
+        padding:20 20px 20px 30px;
     }
 }

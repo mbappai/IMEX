@@ -1,10 +1,11 @@
 import React from 'react'
 import classes from './sideDrawer.module.css'
+import CancelButton from '../controls/cancelButton/cancel'
 
 
 const sideDrawer=(props)=>(
     <div className={classes.sideDrawer} onClick={props.hideDrawer}>
-        <div className={classes.sideDrawer_button}><button onClick={props.hideDrawer}>X</button></div>
+        <div className={classes.sideDrawer_button}><CancelButton onclick={props.hideDrawer}/></div>
         <ul className={classes.sideDrawer_nav}>
           <li><a href="#products">Products</a></li>
           <li><a href="#services">Services</a></li>

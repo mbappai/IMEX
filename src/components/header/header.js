@@ -1,11 +1,12 @@
 import React from 'react'
 import classes from './header.module.css'
 import LogoSvg from '../sharedComp/logo/logo'
+import Hamburger from '../controls/hamburger/hamburger'
 
 const Header=(props)=>(
     <header className={classes.header}>
           <div className={classes.header__logo}><LogoSvg width='50%' height='90%'/></div>
-          <div className={classes.header__hamburger}><button onClick={props.showSideBar}>Hamburger</button></div>
+          <div className={classes.header__hamburger}><Hamburger onclick={props.showSideBar}/></div>
           <ul className={classes.header__nav}>
           <li><a href="#products">Products</a></li>
           <li><a href="#services">Services</a></li>
