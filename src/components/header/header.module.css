@@ -32,7 +32,7 @@
 
   
 
-@media screen and (min-width:600px){
+@media all and (min-width:600px){
 
     .header{
         height: 6vw;
@@ -88,4 +88,10 @@
         display:none;
     }
     
+}
+
+@media all and (min-width:1000px){
+    .header__nav li a{
+        font-size: 2vw
+    }
 }
