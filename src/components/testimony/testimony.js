@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React from 'react'
 import Slide from 'react-reveal/Slide'
 import classes from './testimony.module.css'
 import Carousel from './carousel/carousel'
@@ -8,24 +8,7 @@ import Carousel from './carousel/carousel'
 
 const Testimony=()=>{
 
-    const [currentIndex, setIndex]=useState(0);
-  
-
-    const testimonies=[
-        {testimony:`Working with Secure imex was really a great decision. Their service was very fast
-        very fast and efficient. We got the best prices and goods were delivered on time`,
-        company:'Flakes desserts Kano'
-        },
-        {testimony:`What I enjoy most about working with Secure imex is their transparency and
-        Security. I get to know the companies i am buying from, and I no longer have worries while waiting
-        for my goods as they inspect and make sure the goods are up to my specifications.`,
-        company:'S.M Umar'
-        },
-        {testimony:`Secure imex has saved me a lot of money, time and stress because I no longer have 
-        to go through the stressful journey to China to buy goods.`,
-        company:'Satoshi and Sons'
-        },
-    ]
+    
     // const nextSlide=()=>{
     //     const lastIndex= testimonies.length-1;
     //     const cIndex= currentIndex
