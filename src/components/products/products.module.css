@@ -205,7 +205,7 @@ box-shadow: 3px 7px 12px -4px rgba(46,74,117,0.44);
         font-size: 1.5vw
     }
     .products__content__item_desc{
-        width: 100%;
+        width: 80%;
     }
     .products__content__item_desc p{
         text-align: center;

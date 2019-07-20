@@ -156,3 +156,9 @@
     }
 }
 
+@media all and (min-width:1000px){
+    .services_header h2{
+        font-size: 3vw
+    }
+}
+

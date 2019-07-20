@@ -286,9 +286,24 @@ height: 100%;
 }
     
     
+ @media all and (min-width:800px){
+    .footer_socials__header h3,.footer_navigations__header h3{
+        font-size: 2vw;
+        margin-bottom: 4vw
+    }
+    .footer_navigations__content ul li{
+        margin-bottom: 1vw;
+    }
+    .footer_navigations__content ul li a{
+        font-size: 1.8vw;
+    }
+}
     
-    
-    
+@media all and (min-width:1000px){
+    .footer{
+        padding: 80px 120px;
+    }
+}
     
     
     

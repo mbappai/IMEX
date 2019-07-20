@@ -85,26 +85,9 @@ const contact=()=>{
         <div className={classes.contact__content__form}>
         <form ref={ref} className={classes.formContainer} onSubmit={submitHandler}>
 
-        <input className={classes.input} type="text" required placeholder='name' minLength='3' />
-        <input className={classes.input} type="email" required placeholder='email' pattern="/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i"  />
-       {/* <Input 
-       onChangedHandler={changedHandler}
-        isValid={form.email.isValid}
-        value={form.email.value}
-        name='email'
-        placeholder='Email'
-        touched={form.email.touched}
-        />
-
-       <Input 
-       onChangedHandler={changedHandler}
-        isValid={form.name.isValid}
-        value={form.name.value}
-        name='name'
-        placeholder='Name'
-        touched={form.name.touched} */}
-
-
+        <input className={classes.input} type="text" name='name' onChange={changedHandler} value={form.name.value} required placeholder='name' minLength='3' />
+        <input className={classes.input} type="email" name='email' onChange={changedHandler} value={form.email.value} required placeholder='email' pattern="/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i"  />
+      
         <textarea className={classes.textarea} placeholder='message...' name="textarea" id="" cols="30" rows="2"></textarea>
         <div className={classes.formContainer__buttonContainer}>
         <button className={classes.formContainer__button}> Send Mail </button>

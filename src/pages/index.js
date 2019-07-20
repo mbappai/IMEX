@@ -11,6 +11,7 @@ import About from '../components/About/about'
 import Contact from '../components/Contact/contact'
 import Footer from '../components/footer/footer'
 import '../components/global.css'
+import Testimony from "../components/testimony/testimony";
 
 // import SEO from "../components/seo"
 
@@ -23,7 +24,7 @@ const IndexPage = () => (
       <Products/>
       <Pricing/>
       <About/>
-      {/* <Partnership/> */}
+      <Testimony/>
       <Contact/>
       <Footer/>
    </main>
