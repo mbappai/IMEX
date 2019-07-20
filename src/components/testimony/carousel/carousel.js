@@ -4,12 +4,12 @@ import styled, { css } from 'styled-components';
 
 const width = '100%';
 const Container = styled.div`
-  border: 1px solid red;
+  // border: 1px solid red;
   position: relative;
   overflow: hidden;
 //   padding:4vw;
   width: ${width};
-  height: 25vw;
+  height: 29vw;
   @media and all (min-width:600px){
       height:20vw;
   }
