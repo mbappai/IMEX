@@ -1,7 +1,6 @@
 import React from 'react'
 import makeCarousel from 'react-reveal/makeCarousel'
 import styled, { css } from 'styled-components';
-// import classes from './carousel.module.css'
 
 const width = '100%';
 const Container = styled.div`
@@ -10,7 +9,7 @@ const Container = styled.div`
   overflow: hidden;
 //   padding:4vw;
   width: ${width};
-//   height: 35vw;
+  height: 25vw;
   @media and all (min-width:600px){
       height:20vw;
   }

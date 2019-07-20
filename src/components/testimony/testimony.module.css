@@ -27,9 +27,6 @@
     justify-content: center;
 } */
 
-.carousel{
-   
-}
 
 
 .slider{
@@ -39,7 +36,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding:4vw */
     padding-bottom: 5vw;
 }
 .slider blockquote{
