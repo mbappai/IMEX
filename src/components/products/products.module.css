@@ -91,8 +91,9 @@ box-shadow: 3px 7px 12px -4px rgba(46,74,117,0.44);
     margin-bottom: 1.4vw;
     color:white;
 }
-.products__content__item_label button{
+.products__content__item_desc button{
     color: white;
+    font-size: 3.4vw
 }
 @media all and (min-width:450px){
   
@@ -223,7 +224,7 @@ box-shadow: 3px 7px 12px -4px rgba(46,74,117,0.44);
     }
     .products__content__item_desc button{
         font-size: 1vw;
-        width: 50%;
+        width: 60%;
         margin:0 auto;
         margin-bottom: 10px
     }
