@@ -288,14 +288,17 @@ height: 100%;
     
  @media all and (min-width:800px){
     .footer_socials__header h3,.footer_navigations__header h3{
-        font-size: 2vw;
+        font-size: 1.8vw;
         margin-bottom: 4vw
     }
     .footer_navigations__content ul li{
         margin-bottom: 1vw;
     }
     .footer_navigations__content ul li a{
-        font-size: 1.8vw;
+        font-size: 1.6vw;
+    }
+    .footer_terms{
+        font-size: 1.8vw
     }
 }
     

@@ -48,8 +48,8 @@ return(
                 <div className={classes.products__content__item_label}>
                 <h4>Machinery</h4>
                 <div className={classes.products__content__item_desc}>
-                <p>{productData[1].description.substring(0,75)}...</p>
-                <button data-id='1' onClick={showHandler}>Learn more</button>
+                <p>{productData[1].description.substring(0,65)}...</p>
+                <div className={classes.button} data-id='1' onClick={showHandler}>Learn more</div>
                 </div>
                     </div>
                 
@@ -64,7 +64,7 @@ return(
                 <h4>Sports&Outdoors</h4>
                 <div className={classes.products__content__item_desc}>
                 <p>{productData[3].description.substring(0,75)}...</p>
-                <button data-id='3' onClick={showHandler}>Learn more</button>
+                <div className={classes.button} data-id='3' onClick={showHandler}>Learn more</div>
                 </div>
                     </div>
                
@@ -79,7 +79,7 @@ return(
                 <h4>Furniture</h4>
                 <div className={classes.products__content__item_desc}>
                 <p>{productData[0].description.substring(0,75)}...</p>
-                <button data-id='0' onClick={showHandler}>Learn more</button>
+                <div className={classes.button} data-id='0' onClick={showHandler}>Learn more</div>
                 </div>
                     </div>
                    
@@ -100,7 +100,7 @@ return(
                 <h4>Home Appliances</h4>
                 <div className={classes.products__content__item_desc}>
                 <p>{productData[2].description.substring(0,75)}...</p>
-                <button data-id='2' onClick={showHandler}>Learn more</button>
+                <div className={classes.button} data-id='2' onClick={showHandler}>Learn more</div>
                 </div>
                 </div>
                 
@@ -115,7 +115,7 @@ return(
                 <h4>Food Equipments</h4>
                 <div className={classes.products__content__item_desc}>
                 <p>{productData[4].description.substring(0,75)}...</p>
-                <button data-id='4' onClick={showHandler}>Learn more</button>
+                <div className={classes.button} data-id='4' onClick={showHandler}>Learn more</div>
                 </div>
                     </div>
                    
