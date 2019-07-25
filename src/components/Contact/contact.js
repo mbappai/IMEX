@@ -72,15 +72,15 @@ const contact=()=>{
         </div>
 
         <div className={classes.contact__content__form}>
-        <form name='contact'
-        method='post'
+        <form
+         name='contact'
+         method='post'
          className={classes.formContainer}
-        //   onSubmit={submitHandler}  
           data-netlify="true" 
           data-netlify-honeypot="bot-field">
 
-        <input className={classes.input} type="text" name='name' onChange={changedHandler} value={form.name.value} placeholder='name' />
-        <input className={classes.input} type="text" name='email' onChange={changedHandler} value={form.email.value} placeholder='email' />
+        <input className={classes.input} type="text" name='name'   placeholder='name' />
+        <input className={classes.input} type="text" name='email'   placeholder='email' />
       
         <textarea className={classes.textarea} placeholder='message...' name="textarea" id="" cols="30" rows="2"></textarea>
         <div className={classes.formContainer__buttonContainer}>
