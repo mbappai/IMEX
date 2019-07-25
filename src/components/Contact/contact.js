@@ -75,7 +75,7 @@ const contact=()=>{
         <form name='contact'
         method='post'
          className={classes.formContainer}
-          onSubmit={submitHandler}  
+        //   onSubmit={submitHandler}  
           data-netlify="true" 
           data-netlify-honeypot="bot-field">
 
