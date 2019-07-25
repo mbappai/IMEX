@@ -79,8 +79,8 @@ const contact=()=>{
           data-netlify="true" 
           data-netlify-honeypot="bot-field">
 
-        <input className={classes.input} type="text" name='name' onChange={changedHandler} value={form.name.value} required placeholder='name' minLength='3' />
-        <input className={classes.input} type="email" name='email' onChange={changedHandler} value={form.email.value} required placeholder='email' pattern="/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i"  />
+        <input className={classes.input} type="text" name='name' onChange={changedHandler} value={form.name.value} placeholder='name' />
+        <input className={classes.input} type="text" name='email' onChange={changedHandler} value={form.email.value} placeholder='email' />
       
         <textarea className={classes.textarea} placeholder='message...' name="textarea" id="" cols="30" rows="2"></textarea>
         <div className={classes.formContainer__buttonContainer}>
