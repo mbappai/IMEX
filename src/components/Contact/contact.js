@@ -1,6 +1,5 @@
-import React,{useState, useRef} from 'react'
+import React,{useState} from 'react'
 import classes from './contact.module.css'
-import Input from './textfield'
 import Section from '../sharedComp/sections/sections'
 
 const contact=()=>{  
@@ -48,16 +47,6 @@ const contact=()=>{
             }})
         }
 
-         const ref = useRef()
-
-        //  const validate=()=>{
-        //      return ref.current.reportValidity()
-        //  }
-
-         const submitHandler=(event)=>{
-            event.preventDefault()
-            validate()
-         }
 
     return(
         <Section
@@ -83,7 +72,12 @@ const contact=()=>{
         </div>
 
         <div className={classes.contact__content__form}>
-        <form ref={ref} className={classes.formContainer} onSubmit={submitHandler}>
+        <form name='contact'
+        method='post'
+         className={classes.formContainer}
+          onSubmit={submitHandler}  
+          data-netlify="true" 
+          data-netlify-honeypot="bot-field">
 
         <input className={classes.input} type="text" name='name' onChange={changedHandler} value={form.name.value} required placeholder='name' minLength='3' />
         <input className={classes.input} type="email" name='email' onChange={changedHandler} value={form.email.value} required placeholder='email' pattern="/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i"  />
@@ -98,46 +92,6 @@ const contact=()=>{
         }
         
         />
-    // <section id='contact' className={classes.contact}>
-    //     <div className={classes.contact__header}>
-    //     <h4>We are alway at your service</h4>
-    //     <p>Got a question? Got an order? We are here to help you</p>
-    //     </div>
-    //     <div className={classes.contact__content}>
-    //     <div className={classes.contact__content__details}>
-    //         <h4>Contact Info</h4>
-    //         <p>No 5 Tukur road</p>
-    //         <p>imex@yahoo.com</p>
-    //         <p>15140221630</p>
-    //     </div>
-
-    //     <div className={classes.contact__content__form}>
-    //     <form className={classes.formContainer} action="">
-    //    <Input 
-    //    onChangedHandler={changedHandler}
-    //     isValid={form.email.isValid}
-    //     value={form.email.value}
-    //     name='email'
-    //     placeholder='Email'
-    //     touched={form.email.touched}
-    //     />
-
-    //    <Input 
-    //    onChangedHandler={changedHandler}
-    //     isValid={form.name.isValid}
-    //     value={form.name.value}
-    //     name='name'
-    //     placeholder='Name'
-    //     touched={form.name.touched}
-    //     />
-
-    //     <textarea className={classes.textarea} name="textarea" id="" cols="30" rows="2"></textarea>
-    //     <button></button>
-    //     </form>
-    //     </div>
-       
-    //     </div>
-    // </section>
 )}
 
 export default contact
