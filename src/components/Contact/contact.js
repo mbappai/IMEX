@@ -34,18 +34,18 @@ const contact=()=>{
        
     }
 
-     const changedHandler =(event)=>{
-            const target=event.target.name
-            const value= event.target.value
-            const isValid= validate(target)
-            setForm({...form,
-                [target]:{
-                ...form[target],
-                value,
-                isValid,
-                touched:true
-            }})
-        }
+    //  const changedHandler =(event)=>{
+    //         const target=event.target.name
+    //         const value= event.target.value
+    //         const isValid= validate(target)
+    //         setForm({...form,
+    //             [target]:{
+    //             ...form[target],
+    //             value,
+    //             isValid,
+    //             touched:true
+    //         }})
+    //     }
 
 
     return(
@@ -73,7 +73,7 @@ const contact=()=>{
 
         <div className={classes.contact__content__form}>
         <form
-         name='contact'
+         name='contact-form'
          method='post'
          className={classes.formContainer}
           data-netlify="true" 
@@ -82,9 +82,9 @@ const contact=()=>{
         <input className={classes.input} type="text" name='name'   placeholder='name' />
         <input className={classes.input} type="email" name='email'   placeholder='name@name.com' />
       
-        <textarea className={classes.textarea} placeholder='message...' name="textarea" id="" cols="30" rows="2"></textarea>
+        <textarea className={classes.textarea} placeholder='message...' name="textarea"  cols="30" rows="2"></textarea>
         <div className={classes.formContainer__buttonContainer}>
-        <button className={classes.formContainer__button}> Send Mail </button>
+        <button className={classes.formContainer__button}>Send Mail</button>
         </div>
         </form>
         </div>
