@@ -82,6 +82,7 @@ box-shadow: 3px 2px 11px -5px rgba(99,204,255,0.25);
     width: 100%;
     margin-bottom: 5px;
     background-color: none;
+    display: block !important
 }
 
 .formContainer{
@@ -185,6 +186,7 @@ box-shadow: 3px 2px 11px -5px rgba(99,204,255,0.25);
         width: 80%;
         margin-bottom: 2vw;
         background-color: none;
+    
          
     }
     .textarea{
