@@ -80,6 +80,7 @@ const contact=()=>{
           data-netlify-honeypot="bot-field"
           >
 
+        <input hidden name="bot-field" />
         <input className={classes.input} type="name" name='form-name'   placeholder='name' />
         <input className={classes.input} type="email" name='form-email'   placeholder='name@name.com' />
       
