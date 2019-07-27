@@ -79,9 +79,9 @@ const contact=()=>{
           data-netlify="true" 
           data-netlify-honeypot="bot-field"
           >
-        <input hidden name="bot-field" />
+        {/* <input hidden name="bot-field" /> */}
+        <input className={classes.input} type="email" name='email'  placeholder='name@name.com' />
         <input className={classes.input} type="text" name='name'   placeholder='name' />
-        <input className={classes.input} type="email" name='email'   placeholder='name@name.com' />
       
         <textarea className={classes.textarea} placeholder='message...' name="textarea"  cols="30" rows="2"></textarea>
         <div className={classes.formContainer__buttonContainer}>
