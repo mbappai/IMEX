@@ -7,8 +7,12 @@ const footer=()=>(
     <section className={classes.footer}>
         <section className={classes.footer_logo}>
         <div className={classes.footer_logo_content}>
-        <LogoSvg width='30%' height='50%'/>
+        <div>
+        <LogoSvg width='60%' height='60%'/>
+        </div>
+        <div>
         <h2>Secure Imex Agency</h2>
+        </div>
         </div>
         </section>
         <section className={classes.footer_socials}>
@@ -16,7 +20,7 @@ const footer=()=>(
         <h3>Socials</h3>
         </header>
         <div className={classes.footer_socials__content}>
-        <a href="">Instagram</a>
+        <a href="https://www.instagram.com/p/BwxnXrCDOyg/?igshid=1q81467jgn7bh">Instagram</a>
         </div>
         </section>
         <section className={classes.footer_navigations}>

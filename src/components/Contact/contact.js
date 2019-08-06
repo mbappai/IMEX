@@ -65,10 +65,10 @@ const contact=()=>{
             <>
              <div className={classes.contact__content__details}>
             <h4>Contact Info</h4>
-            <p>No 5 Tukur road</p>
-            <p>imex@yahoo.com</p>
-            <p>15140221630</p>
-            <div className={classes.contact__content__details_socials}><a target='_blank' href="https://www.instagram.com">Instagram Logo</a></div>
+            <p>No 64 Magajin Rumfa, Kano, Nig.</p>
+            <p>secureimex.agency@gmail.com.</p>
+            <p>+2349086303580,+8618240021659</p>
+            <div className={classes.contact__content__details_socials}><a target='_blank' href="https://www.instagram.com/p/BwxnXrCDOyg/?igshid=1q81467jgn7bh">Instagram Logo</a></div>
         </div>
 
         <div className={classes.contact__content__form}>

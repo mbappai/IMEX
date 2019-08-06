@@ -12,7 +12,7 @@ const Pricing =()=>(
     bodyStyles={classes.pricing__content}
     headerNode={<>
     <h2>Find the package that works for you</h2>
-    <p>We are trying our very best to see that everyones needs gets catered for.</p>
+    <p>We are trying our very best to see that everyone's budget gets catered for.</p>
 </>}
     bodyNode={
         <>
@@ -27,7 +27,7 @@ const Pricing =()=>(
         </div>
         <footer className={classes.content__item__footer}>
             <p className={classes.content__item__footer__label}>fee</p>
-            <p className={classes.content__item__footer__price}>$100</p>
+            <p className={classes.content__item__footer__price}>10%</p>
         </footer>
         </article>
         <article className={classes.pricing__content__item}>
@@ -41,7 +41,7 @@ const Pricing =()=>(
         </div>
         <footer className={classes.content__item__footer}>
             <p className={classes.content__item__footer__label}>fee</p>
-            <p className={classes.content__item__footer__price}>$200</p>
+            <p className={classes.content__item__footer__price}>7%</p>
         </footer>
         </article>
         <article className={classes.pricing__content__item}>
@@ -64,7 +64,7 @@ const Pricing =()=>(
         </header>
         <div className={classes.content__item__body}>
             <p className={classes.content__item__body__label}>order ranges</p>
-            <p className={classes.content__item__body__price}>$10,000></p>
+            <p className={classes.content__item__body__price}>$10,000 <span className={classes.small}> and above</span></p>
             <p className={classes.content__item__body__perk}>factory inspection is <span className={classes.perksPrice}>FREE</span></p>
         </div>
         <footer className={classes.content__item__footer}>

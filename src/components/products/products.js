@@ -164,7 +164,7 @@ const productData=  [
     id:"3",
     heading:'sports',
     description:'Sports and entertainment equipments for both indoor and outdoor are also a major category for Secure imex. We have access to quality manufacturers producing',
-    list:['Gym equipments','Commercial pool tables','Ping pong tables','Arcade games','Trampoline porks']
+    list:['Gym equipments','Commercial pool tables','Ping pong tables','Arcade games','Trampoline parks']
 },
 {
     id:"4",

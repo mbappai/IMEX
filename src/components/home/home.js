@@ -19,7 +19,7 @@ const Home=()=>{
         <section className={classes.home}>
         {sideDrawer}
             <div className={classes.home__body__content}>
-            <p>We make your purchase in China easier and safer.</p>
+            <p>We make your purchase from China easier and safer.</p>
             <button className={classes.button}><a  href="#services">Explore</a></button>
             </div>   
         </section> 

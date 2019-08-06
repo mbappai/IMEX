@@ -21,11 +21,26 @@
 }
 .footer_logo_content{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 100%;
     /* border: 1px solid; */
     height: 100%;
+}
+.footer_logo_content div:nth-child(1){
+    width: 30%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+.footer_logo_content div:nth-child(2){
+    width: 50%;
+    /* border: 1px solid white; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 .footer_logo_content h2{
     margin-bottom: 0;

@@ -20,7 +20,7 @@ const about=()=>(
         <div className={classes.about__content_mission}>
         <h4>Our Mision</h4>
             <div className={classes.about__content_missionParagraph}>
-            <p>As a result of the high number of fraud cases in Nigeria, we are dedicated
+            <p> We are dedicated
 to establish a safe and secure platform for Nigerians to buy goods from
 China. Furthermore, help businesses achieve their individual goals 
 of cutting cost and sourcing quality products.</p>
@@ -30,21 +30,21 @@ of cutting cost and sourcing quality products.</p>
         
         <section className={classes.about__content__cardsContainer}>
         <header className={classes.about__content__cards_header}>
-        <h4>Founders.</h4>
+        <h4>Meet The Founders.</h4>
         </header>
         <div className={classes.about__content__cards}>
         <article className={classes.about__content__card}>
                 <figure className={classes.about__content__card__figure}><Image src='cake.png'/></figure>
                 <div className={classes.about__content__card__figure__labels}>
-                <h5>Usman Nakudu</h5>
-                <p>Founder</p>
+                <h5>Mohammed Sani</h5>
+                {/* <p>Founder</p> */}
                 </div>
             </article>
             <article className={classes.about__content__card}>
                 <figure className={classes.about__content__card__figure}><Image src='pic1.jpg'/></figure>
                 <div className={classes.about__content__card__figure__labels}>
-                <h5>Jamboree</h5>
-                <p>Co-Founder</p>
+                <h5>Usman Nakudu</h5>
+                {/* <p>Co-Founder</p> */}
                 </div>
             </article>
         </div>
