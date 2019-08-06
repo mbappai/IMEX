@@ -17,13 +17,12 @@ const Services= ()=>(
     bodyNode={
         <>
         <article className={classes.services_content__article} >
-            <h4>Shipping</h4>
-            <p>Secure Imex manages the entire delivery process from the
-            manufacturer in China to your door-step. We take care
-            of all the paperwork as well, so you don’t have to go 
-            through that stress. We do full container load (FCL)
-            shipment and groupie using reliable China shipping
-            lines.</p>
+            <h4>Product Sourcing</h4>
+            <p>Finding a product in China that will meet your quality and price expectations
+                can be a daunting task. Secure Imex helps you find capable, honest and reliable chinese manufacturers
+                delivering quality products at competitive prices. We take the worry out of the process, so you don't have to, giving
+                you the time to take care of other more important things and all for a minimal percentage fee.
+            </p>
             
         </article>
         <article className={classes.services_content__article} >
@@ -45,12 +44,13 @@ const Services= ()=>(
             
         </article>
         <article className={classes.services_content__article} >
-            <h4>Product Sourcing</h4>
-            <p>Finding a product in China that will meet your quality and price expectations
-                can be a daunting task. Secure Imex helps you find capable, honest and reliable chinese manufacturers
-                delivering quality products at competitive prices. We take the worry out of the process, so you don't have to, giving
-                you the time to take care of other more important things and all for a minimal percentage fee.
-            </p>
+            <h4>Shipping</h4>
+            <p>Secure Imex manages the entire delivery process from the
+            manufacturer in China to your door-step. We take care
+            of all the paperwork as well, so you don’t have to go 
+            through that stress. We do full container load (FCL)
+            shipment and groupie using reliable China shipping
+            lines.</p>
             
         </article>
     </>
