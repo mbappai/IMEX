@@ -12,22 +12,43 @@ import Contact from '../components/Contact/contact'
 import Footer from '../components/footer/footer'
 import '../components/global.css'
 import Testimony from "../components/testimony/testimony";
+import Helmet from 'react-helmet'
+import {graphql} from 'gatsby'
 
 // import SEO from "../components/seo"
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
 
     // <SEO title="Home" />
-   <main>
-     <Home/>
-     <Services/>
-      <Products/>
-      <Pricing/>
-      <About/>
-      <Testimony/>
-      <Contact/>
-      <Footer/>
-   </main>
-)
+    <div>
+       <Helmet>
+       <meta charSet="utf-8" />
+       <meta name="Description" content={data.site.siteMetadata.description}/>
+       <title>{data.site.siteMetadata.title}</title>
+     </Helmet>
+      <main>
+          
+        <Home/>
+        <Services/>
+         <Products/>
+         <Pricing/>
+         <About/>
+         <Testimony/>
+         <Contact/>
+         <Footer/>
+      </main>
+    </div>
+   )
+
+   export const query=graphql`
+   {
+      site{
+        siteMetadata{
+          title
+          description
+        }
+      }
+    }
+   `
 
 export default IndexPage
