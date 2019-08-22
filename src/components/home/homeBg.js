@@ -1,40 +1,35 @@
 import React from 'react'
-import { graphql, StaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
-import styles from './home.module.css'
 import Home from './home'
 
 import BackgroundImage from 'gatsby-background-image'
 
-const BackgroundSection = ({ className }) => (
-    <StaticQuery query={graphql`
-      query {
-        desktop: file(relativePath: { eq: "home-bg.JPG" }) {
-          childImageSharp {
-            fluid(quality: 90, maxWidth: 4160) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
+const BackgroundSection = ({ className }) => {
+  const {imexbg}=useStaticQuery(graphql`
+  query {
+    imexbg: file(relativePath: { eq: "home-bg.JPG" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
-    `}
-     render={data => {
-       // Set ImageData.
-       const imageData = data.desktop.childImageSharp.fluid
+    }
+  }
+`)
+const imexBgGradient=[imexbg.childImageSharp.fluid,`linear-gradient(rgba(220, 15, 15, 0.73), rgba(4, 243, 67, 0.73))`]
+
        return (
-          <BackgroundImage Tag="section"
-                           className={styles.background}
-                           fluid={imageData}
-                           backgroundColor={`black`}
-          >
-          {/* <h1>Hello my name is mujeex</h1> */}
+        <BackgroundImage
+          Tag={`section`}
+          id={`test`}
+          className={className}
+          fluid={imexBgGradient}
+        >
           <Home/>
-          </BackgroundImage>
-       )
-     }
-     }
-    />
-)
+        </BackgroundImage>
+      )
+    }
 
 const StyledBackgroundSection = styled(BackgroundSection)`
   width: 100%;
