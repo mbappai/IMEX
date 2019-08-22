@@ -18,7 +18,7 @@ const about=()=>(
          
         <section className={classes.about__content}>
         <div className={classes.about__content_mission}>
-        <h4>Our Mision</h4>
+        <h4>Our Mission</h4>
             <div className={classes.about__content_missionParagraph}>
             <p> We are dedicated
 to establish a safe and secure platform for Nigerians to buy goods from

@@ -1,51 +1,40 @@
-import React,{useState} from 'react'
+import React,{} from 'react'
 import classes from './contact.module.css'
 import Section from '../sharedComp/sections/sections'
+import InstaLogo from '../sharedComp/instagram/instaSvg'
 
 const contact=()=>{  
     
-    const [form,setForm]= useState(
-        {
-            email:{value:'',
-        isValid:false,
-        touched:false
-      },
-        name:{
-            value:'',
-         isValid:false,
-         touched:false
-        },
-        textarea:{
-            value: ''
-        }
-    })
-
-    const validate= (target)=>{
-         const value= form[target].value
-        if(target==='email'){
-            const emailValid= value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)?true:false
-            console.log(emailValid)
-            return emailValid
-        }else{
-            const nameIsValid= value.trim()!== ''?true: false
-            console.log(nameIsValid)
-            return nameIsValid
-        }
-       
-    }
-
-    //  const changedHandler =(event)=>{
-    //         const target=event.target.name
-    //         const value= event.target.value
-    //         const isValid= validate(target)
-    //         setForm({...form,
-    //             [target]:{
-    //             ...form[target],
-    //             value,
-    //             isValid,
-    //             touched:true
-    //         }})
+    // const [form,setForm]= useState(
+    //     {
+    //         email:{value:'',
+    //     isValid:false,
+    //     touched:false
+    //   },
+    //     name:{
+    //         value:'',
+    //      isValid:false,
+    //      touched:false
+    //     },
+    //     textarea:{
+    //         value: ''
     //     }
+    // })
+
+    // const validate= (target)=>{
+    //      const value= form[target].value
+    //     if(target==='email'){
+    //         const emailValid= value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)?true:false
+    //         console.log(emailValid)
+    //         return emailValid
+    //     }else{
+    //         const nameIsValid= value.trim()!== ''?true: false
+    //         console.log(nameIsValid)
+    //         return nameIsValid
+    //     }
+       
+    // }
+
 
 
     return(
@@ -68,7 +57,7 @@ const contact=()=>{
             <p>No 64 Magajin Rumfa, Kano, Nig.</p>
             <p>secureimex.agency@gmail.com.</p>
             <p>+2349086303580,+8618240021659</p>
-            <div className={classes.contact__content__details_socials}><a target='_blank' href="https://www.instagram.com/p/BwxnXrCDOyg/?igshid=1q81467jgn7bh">Instagram Logo</a></div>
+            <div className={classes.contact__content__details_socials}><InstaLogo/></div>
         </div>
 
         <div className={classes.contact__content__form}>
@@ -81,8 +70,12 @@ const contact=()=>{
           >
         <input hidden name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
-        <input className={classes.input} type="email" name='email'  placeholder='name@name.com' />
-        <input className={classes.input} type="text" name='name'   placeholder='name' />
+        <label htmlFor="email">
+        <input className={classes.input} type="email" id="email" name='email'  placeholder='name@name.com' />
+        </label>
+        <label htmlFor="name">
+        <input className={classes.input} type="text" id="name" name='name'   placeholder='name' />
+        </label>
       
         <textarea className={classes.textarea} placeholder='message...' name="textarea"  cols="30" rows="2"></textarea>
         <div className={classes.formContainer__buttonContainer}>

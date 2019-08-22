@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import styled from 'styled-components'
 import Home from './home'
-import classes from './home.module.css'
 
 import BackgroundImage from 'gatsby-background-image'
 

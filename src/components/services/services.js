@@ -1,7 +1,6 @@
 import React from 'react'
 import classes from './service.module.css'
 import Section from '../sharedComp/sections/sections'
-import Paragraph from '../styledComp/paragraph'
 
 const Services= ()=>(
     <Section

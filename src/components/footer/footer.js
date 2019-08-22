@@ -20,10 +20,10 @@ const footer=()=>(
         <h3>Socials</h3>
         </header>
         <div className={classes.footer_socials__content}>
-        <a href="https://www.instagram.com/p/BwxnXrCDOyg/?igshid=1q81467jgn7bh">Instagram</a>
+        <InstaLogo/>
         </div>
         </section>
-        <section className={classes.footer_navigations}>
+        <section className={classes.footer_navigations}> 
         <header className={classes.footer_navigations__header}>
         <h3>Navigations</h3>
         </header>

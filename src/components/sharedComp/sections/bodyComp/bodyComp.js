@@ -7,11 +7,6 @@ const bodyComp=props=>(
     </div>
 )
    
-const defaultStyle={
-    display: 'flex',
-    width: '80%',
-    backgroundColor: 'red'
-}
 //need to set a default styling in the component.
 
 export default bodyComp
