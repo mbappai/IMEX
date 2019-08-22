@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import styled from 'styled-components'
+import styles from './home.module.css'
 import Home from './home'
 
 import BackgroundImage from 'gatsby-background-image'
@@ -22,9 +23,9 @@ const BackgroundSection = ({ className }) => (
        const imageData = data.desktop.childImageSharp.fluid
        return (
           <BackgroundImage Tag="section"
-                           className={className}
+                           className={styles.background}
                            fluid={imageData}
-                           backgroundColor={`#040e18`}
+                           backgroundColor={`black`}
           >
           {/* <h1>Hello my name is mujeex</h1> */}
           <Home/>

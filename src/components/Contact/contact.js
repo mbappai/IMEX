@@ -70,12 +70,10 @@ const contact=()=>{
           >
         <input hidden name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
-        <label htmlFor="email">
+        <label htmlFor="email"></label>
         <input className={classes.input} type="email" id="email" name='email'  placeholder='name@name.com' />
-        </label>
-        <label htmlFor="name">
+        <label htmlFor="name"></label>
         <input className={classes.input} type="text" id="name" name='name'   placeholder='name' />
-        </label>
       
         <textarea className={classes.textarea} placeholder='message...' name="textarea"  cols="30" rows="2"></textarea>
         <div className={classes.formContainer__buttonContainer}>

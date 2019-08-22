@@ -6,6 +6,10 @@
     align-items: center;
  
 }
+.background{
+    color:black;
+    z-index: 10;
+}
 
 .button{
     background: transparent;
