@@ -17,7 +17,7 @@ const BackgroundSection = ({ className }) => {
     }
   }
 `)
-const imexBgGradient=[imexbg.childImageSharp.fluid,`linear-gradient(rgba(220, 15, 15, 0.73), rgba(4, 243, 67, 0.73))`]
+const imexBgGradient=[imexbg.childImageSharp.fluid,`linear-gradient(0deg, rgba(247,247,247,0.95) 0%, rgba(247,247,247,0.98) 71%, rgba(120,120,120,1) 100%);`]
 
        return (
         <BackgroundImage
