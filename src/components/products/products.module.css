@@ -233,3 +233,9 @@ box-shadow: 3px 7px 12px -4px rgba(46,74,117,0.44);
     }
 
 }
+@media all and (min-width:2000px){
+    .products__content__item{
+        height: 260px;
+        
+    }
+}
