@@ -2,12 +2,11 @@ import React from 'react'
 import classes from './about.module.css'
 // import Image from '../image'
 import Img from 'gatsby-image'
-import {graphql} from 'gatsby'
 
 import Section from '../sharedComp/sections/sections'
 
 
-const about=({data})=>(
+const about=({ms,nakudu})=>(
     <Section
     sectionStyles={classes.about}
     headerStyles={classes.about__header}
@@ -38,14 +37,14 @@ of cutting cost and sourcing quality products.</p>
         </header>
         <div className={classes.about__content__cards}>
         <article className={classes.about__content__card}>
-                <figure className={classes.about__content__card__figure}><Img fluid={data.ms.childImageSharp.fluid}/></figure>
+                <figure className={classes.about__content__card__figure}><Img fluid={ms} alt='Picture of Muhammad Founder'/></figure>
                 <div className={classes.about__content__card__figure__labels}>
                 <h5>Mohammed Sani</h5>
                 {/* <p>Founder</p> */}
                 </div>
             </article>
             <article className={classes.about__content__card}>
-                <figure className={classes.about__content__card__figure}><Img fluid={data.nakudu.childImageSharp.fluid}/></figure>
+                <figure className={classes.about__content__card__figure}><Img  fluid={nakudu} alt='Picture of Usman the Co-founder'/></figure>
                 <div className={classes.about__content__card__figure__labels}>
                 <h5>Usman Nakudu</h5>
                 {/* <p>Co-Founder</p> */}
@@ -62,23 +61,6 @@ of cutting cost and sourcing quality products.</p>
     
 )
 
-export const query=graphql`
-query {
-    file(relativePath: { eq:"ms.JPG" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    nakudu:file(relativePath: { eq:"nakudu.JPG" }) {
-        childImageSharp {
-          fluid(maxWidth: 800) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-  }
-`
+
 
 export default about

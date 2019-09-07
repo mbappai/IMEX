@@ -32,7 +32,10 @@ const IndexPage = ({data}) => (
         <Services/>
          <Products/>
          <Pricing/>
-         <About/>
+         <About 
+         nakudu={data.nakudu.childImageSharp.fluid}
+         ms={data.ms.childImageSharp.fluid}
+         />
          <Testimony/>
          <Contact/>
          <Footer/>
@@ -46,6 +49,20 @@ const IndexPage = ({data}) => (
         siteMetadata{
           title
           description
+        }
+      }
+      ms:file(relativePath: { eq:"ms.JPG" }) {
+        childImageSharp {
+          fluid(maxWidth: 800,maxHeight:500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      nakudu:file(relativePath: { eq:"nakudu.JPG" }) {
+        childImageSharp {
+          fluid(maxWidth: 800,maxHeight:500) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }

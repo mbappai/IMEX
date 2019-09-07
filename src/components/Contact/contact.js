@@ -77,7 +77,7 @@ const contact=()=>{
             <label htmlFor="textarea"></label>
         <textarea className={classes.textarea} placeholder='message...' name="textarea" id="textarea" cols="30" rows="2"></textarea>
         <div className={classes.formContainer__buttonContainer}>
-        <button className={classes.formContainer__button}>Send Mail</button>
+        <button className={classes.formContainer__button}>Send Mail</button> 
         </div>
         </form>
         </div>
