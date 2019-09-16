@@ -5,37 +5,6 @@ import InstaLogo from '../sharedComp/instagram/instaSvg'
 
 const contact=()=>{  
     
-    // const [form,setForm]= useState(
-    //     {
-    //         email:{value:'',
-    //     isValid:false,
-    //     touched:false
-    //   },
-    //     name:{
-    //         value:'',
-    //      isValid:false,
-    //      touched:false
-    //     },
-    //     textarea:{
-    //         value: ''
-    //     }
-    // })
-
-    // const validate= (target)=>{
-    //      const value= form[target].value
-    //     if(target==='email'){
-    //         const emailValid= value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)?true:false
-    //         console.log(emailValid)
-    //         return emailValid
-    //     }else{
-    //         const nameIsValid= value.trim()!== ''?true: false
-    //         console.log(nameIsValid)
-    //         return nameIsValid
-    //     }
-       
-    // }
-
-
 
     return(
         <Section
@@ -70,9 +39,9 @@ const contact=()=>{
           >
         <input hidden name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
-        <label for="email"></label>
+        <label htmlFor="email"></label>
         <input className={classes.input} type="email" id="email" name='email' placeholder='name@name.com' />
-        <label for="name"></label>
+        <label htmlFor="name"></label>
         <input className={classes.input} type="text" id="name" name='name'  placeholder='name' />
             <label htmlFor="textarea"></label>
         <textarea className={classes.textarea} placeholder='message...' name="textarea" id="textarea" cols="30" rows="2"></textarea>
