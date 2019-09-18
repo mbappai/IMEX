@@ -38,7 +38,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   background-size: cover;
   height:100vh;
   // filter:blur(8px);
-  z-index:1
+  z-index:1;
 `
 
 export default StyledBackgroundSection

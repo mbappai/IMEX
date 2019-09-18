@@ -20,7 +20,7 @@ module.exports = {
       options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,
-        start_url: `/https://serene-hawking-d7a27e.netlify.com/`,
+        start_url: `http://serene-hawking-d7a27e.netlify.com/* http://secureimex.com/:splat 301!`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `standalone`,

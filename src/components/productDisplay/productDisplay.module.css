@@ -53,6 +53,9 @@
  .display_list li{
      color:white;
  }
+ .display_list li:last-of-type{
+     list-style: none;
+ }
  
 
 @media all and (min-width:500px){

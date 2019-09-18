@@ -8,6 +8,7 @@ import Section from '../sharedComp/sections/sections'
 
 const about=({ms,nakudu})=>(
     <Section
+    sectionId='about'
     sectionStyles={classes.about}
     headerStyles={classes.about__header}
     bodyStyles={classes.about__content}
