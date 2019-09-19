@@ -37,7 +37,7 @@ const Services= ()=>(
         <article className={classes.services_content__article} >
             <h4>Factory Inspection</h4>
             <p>At Secure Imex. ensuring product quality is one of our top priorities. We offer pre-shipment inspections to ensure 
-                that the product specifications have been met, the product labeling is done to your requiremnent and the packaging
+                that the product specifications have been met, the product labeling is done to your requirement and the packaging
                 is up to standard.
             </p> 
         </article>

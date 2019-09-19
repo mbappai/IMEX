@@ -33,7 +33,7 @@ return(
 
     <Slide right>
     <div className={classes.slider}>
-            <blockquote>Working with Secure imex was really a great decision. Their service was very fast
+            <blockquote>Working with Secure imex was really a great decision. Their service was
         very fast and efficient. We got the best prices and goods were delivered on time`,
         company:'Flakes desserts Kano</blockquote>
         <p>Flakes desserts Kano</p>
