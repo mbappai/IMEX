@@ -1,8 +1,9 @@
 import React from 'react'
+import Footer from '../components/footer/footer'
 
 const Terms=()=>(
-    <div>
-        
-    </div>
+    <section>
+
+    </section>
 )
 export default Terms

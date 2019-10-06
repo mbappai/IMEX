@@ -45,7 +45,7 @@ const footer=()=>(
         </section>
         <section className={classes.footer_terms}>
             <p>2019<span role='img'>©</span>Copyright,Secureimex. All rights reserved.</p>
-            <Link style={{textDecoration:'none',color:'white'}} to='/terms'>Terms and condition</Link>
+            {/* <Link style={{textDecoration:'none',color:'white'}} to='/terms'>Terms and condition</Link> */}
             </section>
     </section>
 )
