@@ -1,4 +1,7 @@
 import React from 'react'
+
+import {Link} from 'gatsby'
+
 import classes from './footer.module.css'
 import InstaLogo from '../sharedComp/instagram/instaSvg'
 import LogoSvg from '../sharedComp/logo/logo'
@@ -40,7 +43,10 @@ const footer=()=>(
         </div>
         
         </section>
-        <section className={classes.footer_terms}><p>Terms and condition</p></section>
+        <section className={classes.footer_terms}>
+            <p>2019<span role='img'>©</span>Copyright,Secureimex. All rights reserved.</p>
+            <Link style={{textDecoration:'none',color:'white'}} to='/terms'>Terms and condition</Link>
+            </section>
     </section>
 )
 
