@@ -40,7 +40,7 @@ const contact=()=>{
         <input hidden name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
         <label htmlFor="email"></label>
-        <input className={classes.input} type="email" id="email" name='email' placeholder='name@name.com' />
+        <input className={classes.input} type="email" id="email" name='email' placeholder='email@yahoo.com' />
         <label htmlFor="name"></label>
         <input className={classes.input} type="text" id="name" name='name'  placeholder='name' />
             <label htmlFor="textarea"></label>
