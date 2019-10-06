@@ -10,12 +10,19 @@
     fill: black;
     opacity: .5;
     transition: opacity .3s ease-in-out;
-    width: 3.5vw
+    width: 25px;
 }
 
 .instaLink:hover .insta{
     fill: black;
     opacity: 1;
+}
+
+@media all and (min-width:700px){
+
+    .insta{
+        width:35px;
+    }
 }
 
 
