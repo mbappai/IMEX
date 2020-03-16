@@ -18,41 +18,41 @@ import { graphql } from "gatsby"
 
 const IndexPage = ({ data }) => {
   // <SEO title="Home" />
-  const services=data.services.edges;
-  return(
-<div>
-    <Helmet>
-      <meta charSet="utf-8" />
-      <meta name="Description" content={data.site.siteMetadata.description} />
-      <title>{data.site.siteMetadata.title}</title>
-    </Helmet>
-    <main>
-      <Home />
-      <Services data={services} />
-      <Products />
-      <Pricing />
-      <About
-        nakudu={data.nakudu.childImageSharp.fluid}
-        ms={data.ms.childImageSharp.fluid}
-      />
-      <Testimony />
-      <Contact />
-      <Footer />
-    </main>
-  </div>
+  const services = data.services.edges
+  return (
+    <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="Description" content={data.site.siteMetadata.description} />
+        <title>{data.site.siteMetadata.title}</title>
+      </Helmet>
+      <main>
+        <Home />
+        <Services data={services} />
+        <Products />
+        <Pricing />
+        <About
+          nakudu={data.nakudu.childImageSharp.fluid}
+          ms={data.ms.childImageSharp.fluid}
+        />
+        <Testimony />
+        <Contact />
+        <Footer />
+      </main>
+    </div>
   )
-  
 }
 
 export const query = graphql`
   {
-    services:allContentfulServices {
+    services: allContentfulServices {
       edges {
         node {
           id
           title
           preview
           subTitle
+          slug
         }
       }
     }

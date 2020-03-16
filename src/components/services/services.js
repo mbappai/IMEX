@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './service.module.css'
 import Section from '../sharedComp/sections/sections'
+import { Link} from "gatsby";
 
 const Services= ({data})=>(
     <Section
@@ -20,8 +21,8 @@ const Services= ({data})=>(
                 <article key={node.id} className={classes.services_content__article} >
                 <h4 className={classes.title}>{node.title.toUpperCase()}</h4>
                <p className={classes.subTitle}>{node.subTitle}</p>
-                <p className={classes.preview}>{node.preview}
-                </p>
+                <p className={classes.preview}>{node.preview}</p>
+                <Link to={`${node.slug}`}>learn more</Link>
             </article>
             )
         })}
