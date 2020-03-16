@@ -17,15 +17,28 @@
     /* margin-bottom: 20px */
 
 }
-
-.services_header h2{
-    font-size: 5vw
+.title{
+    text-transform: capitalize;
+     font-size: var(--bodyText);
 }
+
+.subTitle{
+    font-size: var(--heading-04);
+    line-height: var(--heading-04-lineHeight);
+}
+.preview{
+    text-align: left;
+    font-size: var(--bodyText);
+    line-height: var(--bodyTextLineHeight);
+    height: 100%;
+}
+
+
 .services_content{
     display: flex;
    grid-column: 1/13;
    flex-direction: column;
-   grid-row: 2/11
+   grid-row: 2/11;
 }
 
 .services_content__article{
@@ -33,7 +46,7 @@
     /* border: 1px solid black; */
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding:4%;
     box-sizing: border-box;
@@ -47,16 +60,6 @@
 }
 
 
-.services_content__article h4{
-    font-size: 3.3vw
-}
-
-.services_content__article p{
-    text-align: center;
-    font-size: 3.5vw;
-    line-height: 2.6vh;
-    height: 100%;
-}
 
 @media screen and (min-width:430px){
     .services_content{
@@ -81,12 +84,7 @@
         grid-auto-rows: repeat(12,1fr);
 
     }
-    .services_header h2{
-        font-size: 4vw
-    }
-    .services_content__article h4{
-        font-size: 2.3vw
-    }
+   
     .services_content{
         display: flex;
         flex-direction: row;
@@ -97,12 +95,7 @@
         /* border: 1px solid red; */
 
     }
-    .services_content__article p{
-        text-align: center;
-        font-size: 2.5vw;
-        line-height: 3vw;
-        height: 100%;
-    }
+   
   
     
 }
@@ -121,9 +114,7 @@
         flex-direction: column;
         align-items: center;
     }
-    .services_header h2{
-        font-size: 3.2vw
-    }
+
 
     
     .services_content{
@@ -138,15 +129,8 @@
         padding:1%
     }
     
-    .services_content__article p{
-        text-align: center;
-        font-size: 1.2vw;
-        line-height: 3.5vh;
-        height: 100%;
-    }
-    .services_content__article h4{
-        font-size: 1.5vw
-    }
+  
+
 
     .services_content__article:nth-child(1),.services_content__article:nth-child(3){
         background-color: var(--primary-light)
@@ -157,8 +141,6 @@
 }
 
 @media all and (min-width:1000px){
-    .services_header h2{
-        font-size: 3vw
-    }
+  
 }
 

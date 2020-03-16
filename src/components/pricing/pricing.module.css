@@ -6,7 +6,6 @@
     flex-direction: column;
     padding:40px;
     background-color: #ffffff;
-
 }
 
 .pricing__header{
@@ -20,7 +19,6 @@
 .pricing__header h2{
     font-size: 4.5vw;
     margin-bottom: 1.5vw;
-
 }
 
 .pricing__header p{
@@ -29,11 +27,11 @@
     font-size: 3.5vw;
     line-height: 4vw;
 }
+
 .pricing__content{
     display:flex;
     flex-direction: column;
     width:100%
-
 }
 
 .pricing__content__item{

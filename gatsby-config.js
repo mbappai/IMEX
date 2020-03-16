@@ -1,6 +1,12 @@
+const dotenv= require('dotenv')
+
+if(process.env.NODE_ENV !== 'production'){
+  dotenv.config()
+};
+
 module.exports = {
   siteMetadata: {
-    title: `Secure Imex Agency: Making purchase your purchase in China easier and safer.`,
+    title: `Secure Imex Agency.`,
     description: `Secure Imex Agency: Making purchase your purchase in China easier and safer.`,
     author: `Imex`,
   },
@@ -11,6 +17,23 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/assets/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `8q49c1eihppq`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        downloadLocal:true,
+        environment:'develop'
+      },
+    },
+    
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -43,6 +66,21 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        // CommonMark mode (default: true)
+        commonmark: true,
+        // Footnotes mode (default: true)
+        footnotes: true,
+        // Pedantic mode (default: true)
+        pedantic: true,
+        // GitHub Flavored Markdown mode (default: true)
+        gfm: true,
+        // Plugins configs
+        plugins: [],
+      },
+    },
+    {
       resolve: 'gatsby-plugin-html-attributes',
       options: {
         lang: 'en'
@@ -50,4 +88,5 @@ module.exports = {
     },
 
   ],
+
 }

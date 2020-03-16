@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react"
 
-const Thanks=()=>(
-    <div>
-        <p>Thank you</p>
-    </div>
+const Thanks = () => (
+  <div>
+    <p>Thank you</p>
+  </div>
 )
 
 export default Thanks
