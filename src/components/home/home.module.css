@@ -7,28 +7,37 @@
  
 }
 .background{
-    color:black;
+    /* color:black; */
     z-index: 10;
+}
+
+.atf_text{
+    font-family: 'IBM Plex serif';
+    font-size: var(--heading-03);
+    color:var(--white-color);
+    line-height: var(--heading-03-lineHeight);
+    margin-bottom: 10px;
 }
 
 .button{
     background: transparent;
-border-radius: 3px;
-border: 2px solid #63CCFF;
-color: #63CCFF;
+border-radius: 1px;
+border: 2px solid var(--accent-color);
+color: var(--accent-color);
 margin: 0 1em;
-padding: 1vw 3vw;
+padding: 10px 40px;
 transition: all .2s ease-in
 }
 .button:hover{
     border-radius: 3px;
-    background-color:  #63CCFF;
+    background-color: var(--accent-color);
 }
 
 .button a{
     text-decoration: none;
-    color:#63CCFF;
-    transition: color .2s ease-in
+    color: var(--accent-color);
+    transition: color .2s ease-in;
+    font-size: var(--bodyText);
 }
 
 .button:hover a{
@@ -48,9 +57,9 @@ transition: all .2s ease-in
 }
 
 .home__body__content p{
-    font-size: 5vw;
+    /* font-size: 5vw; */
     text-align: center;
-    line-height: 5.5vw;
+    /* line-height: 5.5vw; */
     color: white;
     font-weight: 700
 }
@@ -59,9 +68,14 @@ transition: all .2s ease-in
     .home__body__content{
         height: 40%;
     }
-    .home__body__content p{
-        font-size: 3.7vw;
-        text-align: center;
-        line-height: 4vw
-    }
+    .atf_text{
+    font-family: 'IBM Plex serif';
+    font-size: var(--heading-05);
+    color:var(--white-color);
+    line-height: var(--heading-05-lineHeight);
+}
+
+.button{
+padding: 15px 40px;
+}
 }

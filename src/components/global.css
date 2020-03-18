@@ -17,9 +17,14 @@ body {
 
 
   --fontWeightMedium:400;
+  --fontWeightBold:600;
+  --fontWeightLight:300;
 
   --bodyText:14px;
   --bodyTextLineHeight:20px;
+
+  --subHeading:18px;
+  --subHeadingLineHeight:24px;
 
   --heading-01:14px;
   --heading-01-lineHeight:18px;
@@ -27,15 +32,19 @@ body {
   --heading-02:16px;
   --heading-02-lineHeight:22px;
 
+  --heading-03:22px;
+  --heading-03-lineHeight:30px;
+
   --heading-04:42px;
   --heading-04-lineHeight:46px;
 
   --heading-05:54px;
   --heading-05-lineHeight:60px;
+  
 
   /* --primary */
   --accent-color:#FCFC05;
-
+  --white-color:white;
   --header-fonts:5vw;
   --paragraph-fonts:1.5vw;
   --mainNav-link-fonts:1.8vw;
@@ -325,9 +334,6 @@ h4 {
   padding-top: 0;
   margin-bottom: 0.7rem;
   color: inherit;
-  font-family: 'typeface-ibm-plex-sans';
-  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.5vw;
@@ -556,6 +562,8 @@ th {
 }
 li {
   margin-bottom: calc(1.45rem / 2);
+  font-size: var(--bodyText);
+  line-height: var(--bodyTextLineHeight);
 }
 ol li {
   padding-left: 0;

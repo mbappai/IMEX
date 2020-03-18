@@ -13,8 +13,8 @@
     background-color: var(--primary-light);
 }
 .sideDrawer_button{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: 8vw;
     right: 10vw;
@@ -42,7 +42,7 @@
     /* border:1px solid red; */
     padding:10px;
     text-decoration: none;
-    font-size: 8vw;
+    font-size: 14px;
     color: white;
 }
 

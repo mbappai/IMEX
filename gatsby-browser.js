@@ -14,7 +14,8 @@
 //   }
 
 require('typeface-ibm-plex-sans');
-// require('typeface-nunito');
+require('typeface-ibm-plex-serif')
+require('typeface-ibm-plex-mono')
 
 export const onServiceWorkerUpdateReady = () => {
   const answer = window.confirm(

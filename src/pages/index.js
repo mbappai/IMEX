@@ -18,7 +18,8 @@ import { graphql } from "gatsby"
 
 const IndexPage = ({ data }) => {
   // <SEO title="Home" />
-  const services = data.services.edges
+  const services = data.services.edges;
+  const testimonies=data.testimonies.edges;
   return (
     <div>
       <Helmet>
@@ -35,7 +36,7 @@ const IndexPage = ({ data }) => {
           nakudu={data.nakudu.childImageSharp.fluid}
           ms={data.ms.childImageSharp.fluid}
         />
-        <Testimony />
+        <Testimony data={testimonies} />
         <Contact />
         <Footer />
       </main>
@@ -53,6 +54,17 @@ export const query = graphql`
           preview
           subTitle
           slug
+        }
+      }
+    }
+    testimonies: allContentfulTestimonies {
+      edges {
+        node {
+          author
+          body {
+            body
+          }
+          companyName
         }
       }
     }
