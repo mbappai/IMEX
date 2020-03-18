@@ -1,14 +1,22 @@
 
  import React from 'react'
- 
- 
- const Layout=()=>(
 
-    <section className={classes.layout}>
-        <div className={classes.layout__header}></div>
-        <div className={classes.layout__content}></div>
-    </section>
- )
+ import Footer from '../footer/footer'
+ import Header from '../header/header'
+ 
+ 
+ const Layout=(props)=>{
+ 
+ return(
+     <div>
+        <Header/>
+    <main>
+    {props.children}
+    </main>
+    <Footer/>
+    </div>
+ )       
+ }
 
   
 

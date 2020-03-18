@@ -28,7 +28,7 @@ const footer=()=>(
         </section>
         <section className={classes.footer_navigations}> 
         <header className={classes.footer_navigations__header}>
-        <h3>Navigations</h3>
+        <h3 className={classes.navigationHeader}>Navigations</h3>
         </header>
         <div className={classes.footer_navigations__content}>
         <ul >
@@ -44,8 +44,9 @@ const footer=()=>(
         
         </section>
         <section className={classes.footer_terms}>
-            <p>2019<span role='img'>©</span>Copyright,Secureimex. All rights reserved.</p>
-            {/* <Link style={{textDecoration:'none',color:'white'}} to='/terms'>Terms and condition</Link> */}
+        <Link style={{color:'yellow', marginBottom:'20px',textDecoration:'none', fontWeight:'700',fontSize:'14px'}} to='/terms' >Terms and condition</Link>
+            <p>2019<span role='img'> ©</span>Copyright,Secureimex.All rights reserved.</p>
+            
             </section>
     </section>
 )

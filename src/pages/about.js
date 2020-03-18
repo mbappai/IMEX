@@ -1,10 +1,11 @@
 import React from 'react'
 import Card from '../components/About/card/card'
 import classes from '../page-styles/about.module.css'
+import Layout from '../components/Layout/layout'
 
 const About= ()=>{
     return(
-        <>
+        <Layout>
         <header className={classes.header}>
             <div className={classes.headerContainer}>
             <h2 className={classes.header_title}>About Us</h2>
@@ -47,7 +48,7 @@ of cutting cost and sourcing quality products.</p>
            
         </section>
         </section>
-        </>
+        </Layout>
     )
 }
 
