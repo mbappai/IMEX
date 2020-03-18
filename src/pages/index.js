@@ -7,7 +7,6 @@ import Products from "../components/products/products"
 import Pricing from "../components/pricing/pricing"
 // import Testimony from '../components/testimony/testimony'
 import About from "../components/About/about"
-import Contact from "../components/Contact/contact"
 import Footer from "../components/footer/footer"
 import "../components/global.css"
 import Testimony from "../components/testimony/testimony"
@@ -18,8 +17,8 @@ import { graphql } from "gatsby"
 
 const IndexPage = ({ data }) => {
   // <SEO title="Home" />
-  const services = data.services.edges;
-  const testimonies=data.testimonies.edges;
+  const services = data.services.edges
+  const testimonies = data.testimonies.edges
   return (
     <div>
       <Helmet>
@@ -37,7 +36,7 @@ const IndexPage = ({ data }) => {
           ms={data.ms.childImageSharp.fluid}
         />
         <Testimony data={testimonies} />
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
       </main>
     </div>

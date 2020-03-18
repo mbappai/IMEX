@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './sideDrawer.module.css'
 import CancelButton from '../controls/cancelButton/cancel'
+import {Link} from 'gatsby'
 
 
 const sideDrawer=(props)=>(
@@ -11,7 +12,7 @@ const sideDrawer=(props)=>(
           <li><a href="#services">Services</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to="/contact-us">Contact</Link></li>
           </ul>
     </div>
 )

@@ -41,10 +41,16 @@ body {
   --heading-05:54px;
   --heading-05-lineHeight:60px;
   
-
-  /* --primary */
+/* colors */
   --accent-color:#FCFC05;
   --white-color:white;
+  --border-color:rgba(0,0,0,30%);
+  --primary-shade:#f9f9f9;
+  --white7:rgba(255,255,255,70%);
+
+
+  /* --primary */
+  
   --header-fonts:5vw;
   --paragraph-fonts:1.5vw;
   --mainNav-link-fonts:1.8vw;
