@@ -12,7 +12,7 @@ const Header=(props)=>(
           <li><a href="#products">Products</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#about">About</a></li>
+          <li><Link to="/about">About</Link></li>
           <li><Link to="/contact-us">Contact</Link></li>
           </ul>
         </header>

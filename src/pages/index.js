@@ -1,12 +1,9 @@
 import React from "react"
-// import { Link } from "gatsby"
 
 import Home from "../components/home/homeBg"
 import Services from "../components/services/services"
 import Products from "../components/products/products"
 import Pricing from "../components/pricing/pricing"
-// import Testimony from '../components/testimony/testimony'
-import About from "../components/About/about"
 import Footer from "../components/footer/footer"
 import "../components/global.css"
 import Testimony from "../components/testimony/testimony"
@@ -31,12 +28,7 @@ const IndexPage = ({ data }) => {
         <Services data={services} />
         <Products />
         <Pricing />
-        <About
-          nakudu={data.nakudu.childImageSharp.fluid}
-          ms={data.ms.childImageSharp.fluid}
-        />
         <Testimony data={testimonies} />
-        {/* <Contact /> */}
         <Footer />
       </main>
     </div>
