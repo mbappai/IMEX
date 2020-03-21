@@ -1,5 +1,5 @@
 .home{
-    height: 100vh;
+    height: 88vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -12,12 +12,17 @@
 }
 
 .atf_text{
-    font-family: 'IBM Plex serif';
-    font-size: var(--heading-03);
-    color:var(--white-color);
-    line-height: var(--heading-03-lineHeight);
-    margin-bottom: 10px;
+    font-family: 'IBM Plex mono';
+    font-size: 30px;
+    color:var(--primary-dark);
+    line-height: 20px;
+    font-weight: 500;
 }
+
+.top, .bottom{
+    display: block;
+}
+
 
 .button{
     background: transparent;
@@ -49,11 +54,11 @@ transition: all .2s ease-in
 .home__body__content{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height:25%;
-    width: 70vw;
+    align-items: flex-start;
+    /* height:60vh; */
+    /* width: 70vw; */
     margin: 50vh auto;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .home__body__content p{
@@ -66,13 +71,11 @@ transition: all .2s ease-in
 
 @media all and (min-width: 500px){
     .home__body__content{
-        height: 40%;
+        height: 90%;
     }
     .atf_text{
-    font-family: 'IBM Plex serif';
-    font-size: var(--heading-05);
-    color:var(--white-color);
-    line-height: var(--heading-05-lineHeight);
+    font-size: 90px;
+    line-height: 115px;
 }
 
 .button{

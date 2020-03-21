@@ -42,8 +42,7 @@
 @media all and (min-width:600px){
 
     .header{
-        height: 15vh;
-        background-color: blue;
+        height: 12vh;
     }
     
     .header__logo{

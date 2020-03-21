@@ -19,8 +19,8 @@ const Home=()=>{
         <section className={classes.home}>
         {sideDrawer}
             <div className={classes.home__body__content}>
-            <p className={classes.atf_text}>We make your purchase from China easier and safer.</p>
-            <button className={classes.button}><a  href="#services">Explore</a></button>
+            <h1 className={classes.atf_text}><span className={classes.top}>Import From China</span><br/> <span className={classes.bottom}>The Safer Way</span> </h1>
+            {/* <button className={classes.button}><a  href="#services">Explore</a></button> */}
             </div>   
         </section> 
         </>

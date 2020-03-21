@@ -1,6 +1,6 @@
 import React from "react"
 
-import Home from "../components/home/homeBg"
+import Home from "../components/home/home"
 import Services from "../components/services/services"
 import Products from "../components/products/products"
 import Pricing from "../components/pricing/pricing"
