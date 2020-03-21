@@ -2,6 +2,7 @@ import React from "react"
 import Form from "../components/Contact/form/form"
 import Address from "../components/Contact/address/address"
 import classes from "../page-styles/contact-us.module.css"
+import Footer from '../components/footer/footer'
 
 const Contact = () => {
   return (
@@ -17,6 +18,7 @@ const Contact = () => {
        <Address />
         <Form />
       </main>
+      <Footer/>
     </div>
   )
 }

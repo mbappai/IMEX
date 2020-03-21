@@ -6,7 +6,7 @@ import {Link} from 'gatsby'
 
 const Header=(props)=>(
     <header className={classes.header}>
-          <div className={classes.header__logo}><LogoSvg width='60%' height='90%'/></div>
+          <div className={classes.header__logo}><LogoSvg /></div>
           <div className={classes.header__hamburger}><Hamburger onclick={props.showSideBar}/></div>
           <ul className={classes.header__nav}>
           <li><a href="#products">Products</a></li>

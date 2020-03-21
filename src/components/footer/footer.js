@@ -5,13 +5,15 @@ import {Link} from 'gatsby'
 import classes from './footer.module.css'
 import InstaLogo from '../sharedComp/instagram/instaSvg'
 import LogoSvg from '../sharedComp/logo/logo'
+import Linkedin from '../sharedComp/linkedin/linkedin'
+import Facebook from '../sharedComp/facebook/facebooks'
 
 const footer=()=>(
     <section className={classes.footer}>
         <section className={classes.footer_logo}>
         <div className={classes.footer_logo_content}>
         <div>
-        <LogoSvg width='60%' height='60%'/>
+        <LogoSvg />
         </div>
         <div>
         <h2>Secure Imex Agency</h2>
@@ -24,6 +26,8 @@ const footer=()=>(
         </header>
         <div className={classes.footer_socials__content}>
         <InstaLogo/>
+        <Facebook/>
+        <Linkedin/>
         </div>
         </section>
         <section className={classes.footer_navigations}> 

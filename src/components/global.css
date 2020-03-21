@@ -65,6 +65,10 @@ body {
   --primary-dark:#006DB3;
   --background-color:rgba(0,109,179,0.2)
 }
+.st0{fill:none;stroke:#000000;stroke-width:13.2723;stroke-miterlimit:10;}
+	.st1{fill:#38D2FC;}
+	.st2{display:none;}
+	.st3{display:inline;}
 
 article,
 aside,

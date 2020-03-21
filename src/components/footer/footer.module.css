@@ -16,7 +16,7 @@
 .footer_logo, .footer_socials,.footer_navigations{
     display:flex;
     flex-direction: column;
-    /* border: 1px solid black; */
+    align-items: flex-start;
     margin-bottom: 30px;
 }
 .footer_logo{
@@ -51,8 +51,8 @@
     font-weight: 800;
 }
 .footer_socials{
-    height: 15vw;
-    margin-bottom: 20px;
+    /* height: 15vw; */
+    margin-bottom: 30px;
 }
 .footer_navigations__header, .footer_socials__header{
     width:100%;
@@ -67,7 +67,8 @@
     font-size: 12px;
     text-transform: uppercase;
     color:var(--white-color);
-    transform: translateX(-5px);
+    width: 100%;
+    /* transform: translateX(-5px); */
 }
 
 .footer_socials__content{
@@ -87,7 +88,8 @@
 .footer_navigations__header h3{
     color:var(--white-color);
     font-size: 12px;
-    transform: translateX(-15px);
+    width: 100%;
+    /* transform: translateX(-15px); */
 }
 
 .footer_navigations__content{
@@ -214,9 +216,8 @@
         /* border: 1px solid black */
     }
     .footer_logo{
-width: 40%;
-height: 100%;
-        
+     width: 40%;
+     height: 100%;    
     }
     
     .footer_logo_content{
@@ -227,22 +228,15 @@ height: 100%;
         /* border: 1px solid; */
         height: 20%;
     }
-    .footer_socials__content a{
-        /* font-size: 2.2vw; */
-    }
-    .footer_logo_content h2{
-        /* margin-bottom: ; */
-
-    }
+    
     .footer_socials{
         width: 30%;
         height: 150px;
-    
     }
     
     .footer_socials__content{
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         width: 100%;
     }
@@ -276,14 +270,16 @@ height: 100%;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
     
     .footer_navigations__content ul li {
         display: flex;
         margin:0;
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: flex-start;
+        align-items: center;
         flex:.5;
+        width: 100%;
     }
     
     .footer_navigations__content ul li a{

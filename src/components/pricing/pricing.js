@@ -3,7 +3,7 @@ import classes from './pricing.module.css'
 import Section from '../sharedComp/sections/sections'
 
 
-const Pricing =()=>(
+const Pricing =({data})=>(
     
     <Section
     sectionId='pricing' 
@@ -16,21 +16,25 @@ const Pricing =()=>(
 </>}
     bodyNode={
         <>
-        <article className={classes.pricing__content__item}>
-        <header className={classes.content__item__header}>
-            <h4>Bronze</h4>
-        </header>
-        <div className={classes.content__item__body}>
-            <p className={classes.content__item__body__label}>order ranges</p>
-            <p className={classes.content__item__body__price}>$1500 - $2499</p>
-            <p className={classes.content__item__body__perk}>factory inspection is optional for <span className={classes.perksPrice}>$200</span></p>
-        </div>
-        <footer className={classes.content__item__footer}>
-            <p className={classes.content__item__footer__label}>fee</p>
-            <p className={classes.content__item__footer__price}>10%</p>
-        </footer>
-        </article>
-        <article className={classes.pricing__content__item}>
+
+        {data.map(({node})=>(
+            <article className={classes.pricing__content__item}>
+            <header className={classes.content__item__header}>
+                <h4>{node.type}</h4>
+            </header>
+            <div className={classes.priceContainer}>
+                <p className={classes.price}>{node.fee}</p>
+            </div>
+            <div className={classes.content__item__body}>
+                <p className={classes.content__item__body__label}>order ranges</p>
+                <p className={classes.content__item__body__price}>{node.range}</p>
+                <p className={classes.content__item__body__perk}>{node.perk.perk}</p>
+            </div>
+
+            </article>
+        ))}
+       
+        {/* <article className={classes.pricing__content__item}>
         <header className={classes.content__item__header}>
             <h4>Silver</h4>
         </header>
@@ -71,7 +75,7 @@ const Pricing =()=>(
             <p className={classes.content__item__footer__label}>fee</p>
             <p className={classes.content__item__footer__price}>5%</p>
         </footer>
-        </article>
+        </article> */}
         </>
     }
     />

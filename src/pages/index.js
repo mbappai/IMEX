@@ -15,7 +15,9 @@ import { graphql } from "gatsby"
 const IndexPage = ({ data }) => {
   // <SEO title="Home" />
   const services = data.services.edges
-  const testimonies = data.testimonies.edges
+  const testimonies = data.testimonies.edges;
+  const pricing= data.pricing.edges;
+
   return (
     <div>
       <Helmet>
@@ -27,7 +29,7 @@ const IndexPage = ({ data }) => {
         <Home />
         <Services data={services} />
         <Products />
-        <Pricing />
+        <Pricing data={pricing} />
         <Testimony data={testimonies} />
         <Footer />
       </main>
@@ -59,6 +61,20 @@ export const query = graphql`
         }
       }
     }
+    pricing: allContentfulPricing{
+      edges{
+        node{
+          range
+          rangeTitle
+          perk {
+            perk
+          }
+          fee
+          type
+        }
+      }
+    }
+    
     site {
       siteMetadata {
         title

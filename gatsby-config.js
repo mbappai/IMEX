@@ -28,6 +28,14 @@ module.exports = {
         environment:'develop'
       },
     },
+    // {
+    //   resolve: 'gatsby-plugin-react-svg',
+    //   options: {
+    //     rule: {
+    //       include: /assets/
+    //     }
+    //   }
+    // },
     
     {
       resolve: `gatsby-source-filesystem`,
