@@ -1,11 +1,13 @@
 import React from 'react'
 import classes from './card.module.css'
+import Img from "gatsby-image"
 
-const Card=({role,name,bioText,img})=>{
+const Card=({role,name,bioText,imgSrc,imgAlt})=>{
     return(
         <article className={classes.container}>
+            <div className={classes.cardContents}>
             <figure className={classes.imageContainer}>
-                <img src="" alt="founder"/>
+                <Img className={classes.image} fluid={imgSrc} alt={imgAlt}/>
             </figure>
             <aside className={classes.details}>
                 <div className={classes.detailsHeader}>
@@ -17,6 +19,8 @@ const Card=({role,name,bioText,img})=>{
                 </div>
                 <div className={classes.socials}></div>
             </aside>
+            </div>
+           
         </article>
     )
 }

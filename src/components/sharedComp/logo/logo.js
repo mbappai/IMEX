@@ -1,11 +1,12 @@
 import React from 'react'
 import classes from './logo.module.css'
+import {Link} from 'gatsby'
 
  const Logo= ()=>(
     
 
  
-<svg version="1.1"  height="150px"  width="150px" viewBox="0 0 1280 1024">
+<Link to='/'><svg version="1.1"  height="150px"  width="150px" viewBox="0 0 1280 1024">
 <g>
 	<path class="st0" d="M624.6,489.7c0,0-9.3-41.1-55.1-41.5c-22.9-0.2-41.5,18.6-41.5,41.5c0,22.9,18.6,41.3,41.5,41.5
 		c22.5,0.2,36.2-9.8,44.3-20.1"/>
@@ -116,7 +117,7 @@ import classes from './logo.module.css'
 		v-0.6h14.3v0.6h-0.7c-0.8,0-1.3,0.2-1.7,0.7c-0.3,0.5-0.5,0.9-0.5,1.3c0,0.3,0,0.7,0.1,1l9,15.9l9.5-15.9c0.1-0.3,0.2-0.7,0.2-1
 		c0-0.3-0.2-0.8-0.5-1.3c-0.3-0.5-0.9-0.7-1.8-0.7H952v-0.6h12.8V704z"/>
 </g>
-</svg>
+</svg></Link>
 
  )
 

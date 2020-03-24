@@ -3,6 +3,7 @@ import classes from "./service-page.module.css"
 import { graphql } from "gatsby"
 
 import Footer from "../components/footer/footer"
+import BackArrow from '../components/sharedComp/arrow-back/arrow-back'
 
 const ServicePage = ({ data }) => {
   const serviceData = data.contentfulServices
@@ -33,8 +34,15 @@ const ServicePage = ({ data }) => {
 
   return (
     <section className={classes.container}>
-      <header className={classes.header}>
+      <header className={classes.headerContainer}>
+        <div className={classes.header}>
+        <div className={classes.backArrow}>
+        <BackArrow/>
+        </div>
+       
         <h2 className={classes.header_title}>{serviceData.title}</h2>
+        </div>
+        
       </header>
       <main className={classes.body}>
         <p className={classes.fullBody}>{serviceData.fullBody.fullBody}</p>

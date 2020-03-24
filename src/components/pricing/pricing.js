@@ -3,24 +3,27 @@ import classes from './pricing.module.css'
 import Section from '../sharedComp/sections/sections'
 
 
-const Pricing =({data})=>(
-    
-    <Section
-    sectionId='pricing' 
-    sectionStyles={classes.pricing}
-    headerStyles={classes.pricing__header}
-    bodyStyles={classes.pricing__content}
-    headerNode={<>
-    <h2>Find the package that works for you</h2>
-    <p>We are trying our very best to see that everyone's budget gets catered for.</p>
-</>}
-    bodyNode={
-        <>
+const Pricing =({data})=>{
 
-        {data.map(({node})=>(
+    const sortedData=data.sort(function(a,b){
+        return a.node.order-b.node.order;
+    });
+
+return(
+    
+   <section className={classes.pricing}>
+
+<header className={classes.pricing_header}>
+         <h2 className={classes.sectionTitle}>PRICING.</h2>
+         <div className={classes.pricing__header__paragraph}>
+        <p className={classes.sectionSubTitle}>Find the packages that works best for you.</p>
+         </div>
+         </header>
+         <div className={classes.pricing_content}>
+         {sortedData.map(({node})=>(
             <article className={classes.pricing__content__item}>
             <header className={classes.content__item__header}>
-                <h4>{node.type}</h4>
+                <h4 className={classes.priceHeaderText}>{node.type}</h4>
             </header>
             <div className={classes.priceContainer}>
                 <p className={classes.price}>{node.fee}</p>
@@ -33,54 +36,10 @@ const Pricing =({data})=>(
 
             </article>
         ))}
+         </div>
        
-        {/* <article className={classes.pricing__content__item}>
-        <header className={classes.content__item__header}>
-            <h4>Silver</h4>
-        </header>
-        <div className={classes.content__item__body}>
-            <p className={classes.content__item__body__label}>order ranges</p>
-            <p className={classes.content__item__body__price}>$2500 - $3499</p>
-            <p className={classes.content__item__body__perk}>factory inspection is optional for <span className={classes.perksPrice}>$200</span></p>
-        </div>
-        <footer className={classes.content__item__footer}>
-            <p className={classes.content__item__footer__label}>fee</p>
-            <p className={classes.content__item__footer__price}>7%</p>
-        </footer>
-        </article>
-        <article className={classes.pricing__content__item}>
-        <header className={classes.content__item__header}>
-            <h4>Gold</h4>
-        </header>
-        <div className={classes.content__item__body}>
-            <p className={classes.content__item__body__label}>order ranges</p>
-            <p className={classes.content__item__body__price}>$3500 - $9,999</p>
-            <p className={classes.content__item__body__perk}>factory inspection is optional for <span className={classes.perksPrice}>$200</span></p>
-        </div>
-        <footer className={classes.content__item__footer}>
-            <p className={classes.content__item__footer__label}>fee</p>
-            <p className={classes.content__item__footer__price}>5%</p>
-        </footer>
-        </article>
-        <article className={classes.pricing__content__item}>
-        <header className={classes.content__item__header}>
-            <h4>Platinum</h4>
-        </header>
-        <div className={classes.content__item__body}>
-            <p className={classes.content__item__body__label}>order ranges</p>
-            <p className={classes.content__item__body__price}>$10,000 <span className={classes.small}> and above</span></p>
-            <p className={classes.content__item__body__perk}>factory inspection is <span className={classes.perksPrice}>FREE</span></p>
-        </div>
-        <footer className={classes.content__item__footer}>
-            <p className={classes.content__item__footer__label}>fee</p>
-            <p className={classes.content__item__footer__price}>5%</p>
-        </footer>
-        </article> */}
-        </>
-    }
-    />
     
-    
-)
+    </section>
+)}
 
 export default Pricing

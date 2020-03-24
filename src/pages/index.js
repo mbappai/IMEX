@@ -15,8 +15,9 @@ import { graphql } from "gatsby"
 const IndexPage = ({ data }) => {
   // <SEO title="Home" />
   const services = data.services.edges
-  const testimonies = data.testimonies.edges;
-  const pricing= data.pricing.edges;
+  const testimonies = data.testimonies.edges
+  const pricing = data.pricing.edges
+
 
   return (
     <div>
@@ -61,9 +62,9 @@ export const query = graphql`
         }
       }
     }
-    pricing: allContentfulPricing{
-      edges{
-        node{
+    pricing: allContentfulPricing {
+      edges {
+        node {
           range
           rangeTitle
           perk {
@@ -71,30 +72,20 @@ export const query = graphql`
           }
           fee
           type
+          order
         }
       }
     }
-    
+
+   
+
     site {
       siteMetadata {
         title
         description
       }
     }
-    ms: file(relativePath: { eq: "ms.JPG" }) {
-      childImageSharp {
-        fluid(maxWidth: 800, maxHeight: 500) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    nakudu: file(relativePath: { eq: "nakudu.JPG" }) {
-      childImageSharp {
-        fluid(maxWidth: 800, maxHeight: 500) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
+   
   }
 `
 

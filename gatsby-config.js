@@ -25,7 +25,7 @@ module.exports = {
         spaceId: `8q49c1eihppq`,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
         downloadLocal:true,
-        environment:'develop'
+        environment:'master'
       },
     },
     // {
