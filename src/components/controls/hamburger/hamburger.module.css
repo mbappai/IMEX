@@ -6,16 +6,11 @@
     height: 35px;
     width: 40px;
     cursor: pointer;
-    margin:  auto 20px;
+    margin: auto 20px;
     margin-top: 10px;
-
+    /* border: 1px solid; */
 }
 
-.hamburger div{
-    width: 100%;
-    border:2px solid var(--primary-dark);
-    /* margin-bottom: 4px */
-}
 
 @media all and (min-width:600px){
     .hamburger{

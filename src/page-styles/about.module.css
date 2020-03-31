@@ -145,7 +145,7 @@
         height:100%;
         width: 100%;
         justify-content: space-between;
-        flex-direction: row;
+        flex-flow: row wrap;
     }
     
     .about__content__card{

@@ -66,10 +66,11 @@ margin-bottom: 20px;
 
 @media all and (min-width:1000px){
     .container{
-        width: 50%;
+        width: 49.5%;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
+        margin:10px 0px 0px 0px;
     }
 
 .cardContents{

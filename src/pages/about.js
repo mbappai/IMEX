@@ -8,6 +8,9 @@ import PageHeader from "../components/pageHeader/pageHeader"
 
 const About = ({data}) => {
   const team=data.team.edges;
+ const sortedData=data.team.edges.sort(function(a,b){
+    return a.node.order - b.node.order;
+});
   return (
     <Layout>
       <PageHeader hideBackArrow={true }title="About Us" subtitle="" />
@@ -30,7 +33,7 @@ const About = ({data}) => {
             <h4 className={classes.teamHeader}>Meet The Team.</h4>
           </header>
           <div className={classes.about__content__cards}>
-            {team.map(({node})=>(
+            {sortedData.map(({node})=>(
                 <Card
                 name={node.name}
                 role={node.companyRole}
@@ -58,6 +61,7 @@ export const query=graphql`
           bio
         }
         name
+        order
         companyRole
         profPic{
           description

@@ -6,8 +6,8 @@ const Products= ()=>{
 
 return(
     <section className={classes.products}>
-   <header className={classes.product_header}>
-         <h2 className={classes.sectionTitle}>PRODUCTS WE ARE BEST KNOWN FOR.</h2>
+   <header className={classes.products_header}>
+         <h2 className={classes.sectionTitle}>EXPERTISE.</h2>
          <div className={classes.products__header__paragraph}>
         <p className={classes.sectionSubTitle}>We pride ourselves for having access to China's best manufacturers for the following product categories.</p>
          </div>

@@ -1,12 +1,11 @@
 import React from 'react'
 import classes from './hamburger.module.css'
+import Hamburger from '../../sharedComp/hamburger/hamburger'
 
-const hamburger=(props)=>(
+const HamburgerMenu=(props)=>(
     <div onClick={props.onclick} className={classes.hamburger}>
-        <div></div>
-        <div></div>
-        <div></div>
+        <Hamburger/>
     </div>
 )
 
-export default hamburger
+export default HamburgerMenu

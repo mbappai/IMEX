@@ -1,12 +1,12 @@
 .testimonials{
     display: flex;
-    /* flex-flow: row nowrap; */
     background-color: #f9f9f9;
     height: 400px;
     align-items: center;
     overflow-x: auto;
     /* -webkit-overflow-scrolling: touch; */
     padding: 10px 40px;
+    box-sizing: border-box;
 }
 
 .testimony_card{
@@ -18,11 +18,9 @@
     align-items: center;
     background-color: var(--white-color);
     height: 60%;
+    min-height: 200px;
     position: relative;
     min-width: 400px;
-    /* width: 800px; */
-    /* flex: 0 0 auto; */
-    /* flex-shrink: 0; */
     
 }
 

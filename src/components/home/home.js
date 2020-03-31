@@ -19,8 +19,12 @@ const Home=()=>{
         <section className={classes.home}>
         {sideDrawer}
             <div className={classes.home__body__content}>
-            <h1 className={classes.atf_text}><span className={classes.top}>Import From China</span><br/> <span className={classes.bottom}>The Safer Way</span> </h1>
-            {/* <button className={classes.button}><a  href="#services">Explore</a></button> */}
+            <h1 className={classes.atf_text}>
+                <span className={classes.atf_span}>Import</span>
+                <span className={classes.atf_span}>From China</span>
+                {/* <br/>  */}
+                <span className={classes.atf_span}>The Safer Way</span> 
+                </h1>
             </div>   
         </section> 
         </>

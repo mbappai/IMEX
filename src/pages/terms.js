@@ -3,23 +3,23 @@ import { graphql } from "gatsby"
 
 import Footer from "../components/footer/footer"
 import classes from "../page-styles/terms.module.css"
+import Layout from '../components/Layout/layout'
+import PageHeader from '../components/pageHeader/pageHeader'
 
 
 
 const Terms = ({ data }) => {
 
-const termsMarkDown=data.terms.termsMd.termsMd
+const termsMarkDown=data.terms.termsMd.childMarkdownRemark
   return (
-    <section>
-      <header className={classes.header}>
-        <div className={classes.headerContainer}>
-          <h2 className={classes.header_title}>Terms and Condition</h2>
-        </div>
-      </header>
-
-      <div className={classes.body}>{termsMarkDown}</div>
-      <Footer />
+    <Layout>
+      <PageHeader title='Terms & Conditions'/>
+ <section>
+  
+      <div className={classes.body}  dangerouslySetInnerHTML={{ __html: termsMarkDown.html }}></div>
     </section>
+    </Layout>
+   
   )
 }
 export default Terms
@@ -28,7 +28,9 @@ export const query = graphql`
   {
     terms: contentfulTerms {
       termsMd {
-        termsMd
+        childMarkdownRemark {
+          html
+        }
       }
     }
   }

@@ -27,7 +27,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; 
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .pricing_content{
@@ -165,11 +165,12 @@ flex:3
 
 @media all and (min-width:700px){
     
-    .pricing__header{
+    .pricing_header{
         display:flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin-bottom: 80px;
        
     }
     .pricing__header p{

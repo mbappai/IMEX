@@ -6,7 +6,7 @@ const PageHeader=(props)=>(
     <header className={classes.header}>
     <div className={classes.headerContainer}>
     {props.hideBackArrow?'': <ArrowBack/>}
-    <h2 className={classes.header_title}>{props.title}</h2>
+    <h1 className={classes.header_title}>{props.title}</h1>
 <p className={classes.header_subTitle}>
   {props.subtitle}
 </p>
