@@ -13,15 +13,15 @@ const footer=()=>(
         <div className={classes.footerContent}>
         <section className={classes.footer_logo}>
         <div className={classes.footer_logo_content}>
-        <div className={classes.logoContainer}>
-        <LogoSvg />
-        </div>
+          <div className={classes.logoContainer}>
+            <LogoSvg />
+          </div>
         <div className={classes.logoNameContainer}>
         <h2 className={classes.logoName}>Secure Imex Agency</h2>
         </div>
         </div>
         </section>
-        {/* <div className={classes.bottom}> */}
+        <div className={classes.bottom}>
         <section className={classes.footer_socials}>
         <header className={classes.footer_socials__header}>
         <h3>Socials</h3>
@@ -49,10 +49,10 @@ const footer=()=>(
         </div>
         
         </section>
-        {/* </div> */}
+        </div>
         
         <section className={classes.footer_terms}>
-        <Link style={{color:'yellow', marginBottom:'20px',textDecoration:'none', fontWeight:'700',fontSize:'14px'}} to='/terms' >Terms and condition</Link>
+        <Link style={{color:'white', marginBottom:'20px',textDecoration:'none', fontWeight:'700',fontSize:'14px'}} to='/terms' >Terms and condition</Link>
             <p>2019<span role='img'> ©</span>Copyright,Secureimex.All rights reserved.</p>
             
             </section>
