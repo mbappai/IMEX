@@ -22,11 +22,10 @@ const ServicePage = ({ data }) => {
   const perksListFooter =
     serviceData.perksFooterListBody !== null ? (
       <ul>
-        {perksListFooter !== null
-          ? serviceData.perksFooterListBody.body.map(perkFooter => {
+        { serviceData.perksFooterListBody.body.map(perkFooter => {
               return <li>{perkFooter}</li>
             })
-          : ""}
+          }
       </ul>
     ) : (
       ""
