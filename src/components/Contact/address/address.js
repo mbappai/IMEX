@@ -11,7 +11,7 @@ const Address=()=>{
         <article className={classes.addressContainer}>
             <div className={classes.addressHeader}>
             <h4 className={classes.headerText}>OFFICE INFO</h4>
-            <p>Drop us a line. We'd love to here from you.</p>
+            <p>Drop us a line. We'd love to hear from you.</p>
             </div>
 
             <div className={classes.contactInfo}>
