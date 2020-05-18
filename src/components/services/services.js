@@ -11,7 +11,7 @@ const Services= ({data})=>(
     bodyStyles={classes.services_content}
     headerNode={  
         <>  
-    {/* <h2>What are we Offering?</h2> */}
+    <h2>What are we Offering?</h2>
     </>
     }
     bodyNode={
@@ -21,7 +21,7 @@ const Services= ({data})=>(
                 <article key={node.id} className={classes.services_content__article} >
                 <h4 className={classes.title}>{node.title.toUpperCase()}</h4>
                <p className={classes.subTitle}>{node.subTitle}</p>
-                <p className={classes.preview}>{node.preview}</p>
+                <p className={classes.preview}>{node.preview.preview}</p>
                 <Link className={classes.link} to={`${node.slug}`}>learn more</Link>
             </article>
             )

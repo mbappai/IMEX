@@ -2,7 +2,6 @@ import React from "react"
 import Form from "../components/Contact/form/form"
 import Address from "../components/Contact/address/address"
 import classes from "../page-styles/contact-us.module.css"
-import Footer from "../components/footer/footer"
 import PageHeader from '../components/pageHeader/pageHeader'
 import Layout from '../components/Layout/layout'
 

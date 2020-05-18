@@ -36,6 +36,10 @@ color: var(--white-color);
     margin: 0 auto;
     padding: 50px 0;
 }
+.fullBody_header{
+    font-size: var(--subHeading);
+    line-height: var(--subHeadingLineHeight);
+}
 .body_title{
     font-size: var(--subHeading);
     line-height: var(--subHeadingLineHeight);

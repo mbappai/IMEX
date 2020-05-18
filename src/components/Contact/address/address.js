@@ -20,9 +20,9 @@ const Address=()=>{
             </div>
 
             <div className={classes.socials}>
-                <InstaSvg url="https://www.instagram.com/p/BwxnXrCDOyg/?igshid=1q81467jgn7bh"/>
-                <LinkedIn url="https://www.instagram.com/p/BwxnXrCDOyg/?igshid=1q81467jgn7bh"/>
-                <Facebook url="https://www.instagram.com/p/BwxnXrCDOyg/?igshid=1q81467jgn7bh"/>
+                <InstaSvg url="https://instagram.com/secure_imex_agency?igshid=13ygp3pa6x20t"/>
+                {/* <LinkedIn url="https://www.instagram.com/p/BwxnXrCDOyg/?igshid=1q81467jgn7bh"/> */}
+                {/* <Facebook url="https://www.instagram.com/p/BwxnXrCDOyg/?igshid=1q81467jgn7bh"/> */}
             </div>
             <div className={classes.contactEmail}>
                 <h4 className={classes.headerText}>CONTACT INFO</h4>

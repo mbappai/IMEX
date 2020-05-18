@@ -5,7 +5,7 @@ import classes from './products.module.css';
 const Products= ()=>{
 
 return(
-    <section className={classes.products}>
+    <section id='products' className={classes.products}>
    <header className={classes.products_header}>
          <h2 className={classes.sectionTitle}>EXPERTISE.</h2>
          <div className={classes.products__header__paragraph}>

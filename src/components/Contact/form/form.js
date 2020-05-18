@@ -1,6 +1,5 @@
 import React,{} from 'react'
 import classes from './form.module.css'
-import Section from '../../sharedComp/sections/sections'
 
 const contact=()=>{  
     

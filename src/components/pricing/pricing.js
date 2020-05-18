@@ -11,7 +11,7 @@ const Pricing =({data})=>{
 
 return(
     
-   <section className={classes.pricing}>
+   <section id='pricing' className={classes.pricing}>
 
 <header className={classes.pricing_header}>
          <h2 className={classes.sectionTitle}>PRICING.</h2>

@@ -45,7 +45,9 @@ export const query = graphql`
         node {
           id
           title
-          preview
+          preview{
+            preview
+          }
           subTitle
           slug
         }

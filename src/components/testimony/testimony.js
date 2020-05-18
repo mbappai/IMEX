@@ -19,14 +19,6 @@ return(
                   </footer> 
            </figure>
        ))}
-       <figure className={classes.testimony_card}>
-              <blockquote className={classes.testimony_content}>Working with secure imex was really a great decision, their service was fast and efficient. We got the best prices and goods were delivered on time
-</blockquote>
-              <footer className={classes.testimony_footer}>
-       <cite className={classes.author}>mujeex</cite>
-       <cite className={classes.role}>tailors</cite>
-                  </footer> 
-           </figure>
            
     </section>
 )    

@@ -44,6 +44,7 @@ const ServicePage = ({ data }) => {
         
       </header>
       <main className={classes.body}>
+       <h3 className={classes.fullBody_header}>{serviceData.fullBodyTitle}</h3>
         <p className={classes.fullBody}>{serviceData.fullBody.fullBody}</p>
         <h3 className={classes.body_title}>{serviceData.perksListTitle}</h3>
         {perksList}
@@ -76,6 +77,7 @@ export const query = graphql`
       fullBody {
         fullBody
       }
+      fullBodyTitle
     }
   }
 `

@@ -21,8 +21,8 @@ const About = ({data}) => {
             <p className={classes.missionText}>
               {" "}
               We are dedicated to establish a safe and secure platform for
-              Nigerians to buy goods from China. Furthermore, help businesses
-              achieve their individual goals of cutting cost and sourcing
+              Nigerians to buy goods from China. Furthermore, help businesses and individuals
+              achieve their goals of cutting cost and sourcing
               quality products.
             </p>
           </div>
