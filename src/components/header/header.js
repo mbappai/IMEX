@@ -9,8 +9,8 @@ const Header=(props)=>(
           <div className={classes.header__logo}><LogoSvg /></div>
           <div className={classes.header__hamburger}><Hamburger onclick={props.showSideBar}/></div>
           <ul className={classes.header__nav}>
-          <li><Link className={classes.linkStyle} href="/#expertise">Expertise</Link></li>
-          <li><Link className={classes.linkStyle} href="/#services">Services</Link></li>
+          <li><Link className={classes.linkStyle} to="/#expertise">Expertise</Link></li>
+          <li><Link className={classes.linkStyle} to="/#services">Services</Link></li>
           <li><Link className={classes.linkStyle} to="/#pricing">Pricing</Link></li>
           <li><Link activeClassName={classes.activeLink}   to="/about">About</Link></li>
           <li><Link activeClassName={classes.activeLink} to="/contact-us">Contact</Link></li>
