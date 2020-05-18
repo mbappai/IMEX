@@ -31,7 +31,8 @@ export const shouldUpdateScroll = ({
   routerProps: { location },
   getSavedScrollPosition
 }) => {
-  const currentPosition = getSavedScrollPosition(location)
+  const currentPosition = getSavedScrollPosition(location);
+  console.log('current position',currentPosition)
   const queriedPosition = getSavedScrollPosition({ pathname: `/random` })
 
   window.scrollTo(...(currentPosition || [0, 0]))
