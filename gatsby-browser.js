@@ -29,11 +29,15 @@ export const onServiceWorkerUpdateReady = () => {
 
 export const shouldUpdateScroll = ({
   routerProps: { location },
-  getSavedScrollPosition
+  getSavedScrollPosition,
+  pathname
 }) => {
-  const currentPosition = getSavedScrollPosition(location);
+  const currentPosition = getSavedScrollPosition(pathname);
+
   console.log('current position',currentPosition)
-  const queriedPosition = getSavedScrollPosition({ pathname: `/random` })
+  // console.log(getSavedScrollPosition(location));
+  const queriedPosition = getSavedScrollPosition({ pathname: `/about` })
+
 
   window.scrollTo(...(currentPosition || [0, 0]))
 
