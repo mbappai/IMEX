@@ -27,9 +27,9 @@ const footer=()=>(
         <h3>Socials</h3>
         </header>
         <div className={classes.footer_socials__content}>
-        <InstaLogo/>
-        <Facebook/>
-        <Linkedin/>
+        <InstaLogo url="https://instagram.com/secure_imex_agency?igshid=13ygp3pa6x20t"/>
+        {/* <Facebook/> */}
+        {/* <Linkedin/> */}
         </div>
         </section>
         <section className={classes.footer_navigations}> 
@@ -38,7 +38,7 @@ const footer=()=>(
         </header>
         <div className={classes.footer_navigations__content}>
         <ul >
-            <li><Link to="/">Home</Link></li>
+            <li><Link to="/#home">Home</Link></li>
             <li><Link to="/#expertise">Expertise</Link></li>
             <li><Link to="/#services">Services</Link></li>
             <li><Link to="/#pricing">Pricing</Link></li>

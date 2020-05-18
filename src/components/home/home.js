@@ -16,7 +16,7 @@ const Home=()=>{
     return(
         <>
         <Header showSideBar={showSideBar}/>
-        <section className={classes.home}>
+        <section id='home' className={classes.home}>
         {sideDrawer}
             <div className={classes.home__body__content}>
             <h1 className={classes.atf_text}>
