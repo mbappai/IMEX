@@ -23,7 +23,7 @@ const Home=()=>{
                 <span className={classes.atf_span}>Import</span>
                 <span className={classes.atf_span}>From China</span>
                 {/* <br/>  */}
-                <span className={classes.atf_span}>The Safer Way</span> 
+                <span className={classes.atf_span}>The Secure Way</span> 
                 </h1>
             </div>   
         </section> 

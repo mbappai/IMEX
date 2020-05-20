@@ -37,31 +37,31 @@ const productData=  [
     {
         id:"0",
         heading:'furniture',
-        description:'Secure Imex sources furniture for wholesalers, retail stores and furniture for home use. We will help you get quality furniture from the best chinese suppliers at very low prices. Furniture categories include:',
-        list:['Home furniture','Office furniture','Ratton furniture, umbrellas, coffee tables','Pool-side furniture.','e.t.c']
+        description:'We source furniture for wholesalers, retail stores and furniture for home use. We will help you get quality furniture from the best chinese suppliers at very low prices',
+
    },
    {
     id:"1",
     heading:'machinery',
-    description:'Complete production lines, packaging machines, agricultural machinery, both large and small scale are major product categories for secure Imex. We have access to a range of quality manufacturers producing:',
-    list:['Complete food production lines.','plastic recycling machines.','PVC pipe production lines.','Rice processing machines (mills, harvester, sorter)','Packaging machines.','e.t.c']
+    description:'Complete production lines, packaging machines, agricultural machinery, both large and small scale are major product categories for secure imex',
+
 },
 {
     id:"2",
     heading:'home appliances',
-    description:'Are you looking to buy home appliances for personal use or resale? Secure Imex will help you source quality appliances at the most competitive prices. We can also help you get your special designs produced or brand products to your specification',
-    list:['Lighting','Home electronics','Decorative items.','e.t.c']
+    description:'Are you looking to buy home appliances for personal use or resale? We will help you source quality appliances at the most competitive prices.',
+
 },
 {
     id:"3",
-    heading:'sports',
-    description:'Sports and entertainment equipments for both indoor and outdoor are also a major category for Secure imex. We have access to quality manufacturers producing',
-    list:['Gym equipments','Commercial pool tables','Ping pong tables','Arcade games','Trampoline parks','e.t.c']
+    heading:'sports equipments',
+    description:'Modern and high quality sports and entertainment equipments for both indoor and outdoor use.',
+
 },
 {
     id:"4",
     heading:'food equipments',
-    description:'Secure Imex helps you source quality food equipments for restaurants, ice-cream / coffee shops. Bakeries both for commercial use or retail. Products include: ',
-    list:['Commercial gas cooker','Commercial oven','industrial deep fryer','Ice cream machines','Display freezer','Slush machines','Industrial freezer','Commercial Mixer, Dryer.','e.t.c']
+    description:'Source high quality food equipments for restaurants, ice-creams/ coffee shops, bakeries both for commercial use or retail',
+
 }
 ] 
