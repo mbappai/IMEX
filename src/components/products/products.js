@@ -37,13 +37,13 @@ const productData=  [
     {
         id:"0",
         heading:'furniture',
-        description:'We source furniture for wholesalers, retail stores and furniture for home use. We will help you get quality furniture from the best chinese suppliers at very low prices',
+        description:'We source furniture for wholesalers, retail stores and furniture for home use. We will help you get quality furniture from the best chinese suppliers at very low prices.',
 
    },
    {
     id:"1",
     heading:'machinery',
-    description:'Complete production lines, packaging machines, agricultural machinery, both large and small scale are major product categories for secure imex',
+    description:'Complete production lines, packaging machines, agricultural machinery, both large and small scale are major product categories for secure imex.',
 
 },
 {
@@ -61,7 +61,7 @@ const productData=  [
 {
     id:"4",
     heading:'food equipments',
-    description:'Source high quality food equipments for restaurants, ice-creams/ coffee shops, bakeries both for commercial use or retail',
+    description:'Source high quality food equipments for restaurants, ice-creams/ coffee shops, bakeries both for commercial use or retail.',
 
 }
 ] 

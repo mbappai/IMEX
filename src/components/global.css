@@ -48,7 +48,7 @@ body {
 /* colors */
   --accent-color:#FCFC05;
   --white-color:white;
-  --border-color:rgba(0,0,0,30%);
+  --border-color:rgba(0,0,0,15%);
   --primary-shade:#f9f9f9;
   --white7:rgba(255,255,255,70%);
 
@@ -63,6 +63,7 @@ body {
   --primary-color:#039BE5;
   --primary-light:#63CCFF;
   --primary-dark:#006DB3;
+  --primary-dark-shade:rgba(0, 110, 179, 0.192);
   --background-color:rgba(0,109,179,0.2)
 }
 .st0{fill:none;stroke:#000000;stroke-width:13.2723;stroke-miterlimit:10;}

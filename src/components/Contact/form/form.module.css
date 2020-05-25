@@ -3,7 +3,7 @@
 
 
 .formHeader{
-    background-color: blue;
+    background-color:var(--primary-dark);
     padding: 15px;
     width: 100%;
     color: var(--white-color);
@@ -60,7 +60,7 @@
     font-size: var(--bodyText);
 }
 .textarea::placeholder{
-transform: translateX(10px) translateY(5px);
+transform: translateX(10px) translateY(10px);
 }
 
 .buttonContainer{

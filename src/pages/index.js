@@ -50,6 +50,7 @@ export const query = graphql`
           }
           subTitle
           slug
+          order
         }
       }
     }

@@ -46,7 +46,7 @@ const contact=()=>{
         <label htmlFor="textarea"></label>
         <textarea
           className={classes.textarea}
-          placeholder="Describe your order"
+          placeholder="Describe your order..."
           name="textarea"
           id="textarea"
           cols="30"

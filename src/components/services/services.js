@@ -3,7 +3,13 @@ import classes from './service.module.css'
 import Section from '../sharedComp/sections/sections'
 import { Link} from "gatsby";
 
-const Services= ({data})=>(
+const Services= ({data})=>{
+
+    const sortedData=data.sort(function(a,b){
+        return a.node.order-b.node.order;
+    });
+
+    return(
     <Section
     sectionId='services'
     sectionStyles={classes.services}
@@ -16,7 +22,7 @@ const Services= ({data})=>(
     }
     bodyNode={
         <>
-        {data.map(({node})=>{
+        {sortedData.map(({node})=>{
             return(
                 <article key={node.id} className={classes.services_content__article} >
                 <h4 className={classes.title}>{node.title.toUpperCase()}</h4>
@@ -31,6 +37,6 @@ const Services= ({data})=>(
     }
     />
    
-)
+)}
 
 export default Services
