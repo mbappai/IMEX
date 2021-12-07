@@ -23,7 +23,7 @@
     "gatsby-transformer-remark": "^2.6.58",
     "gatsby-transformer-sharp": "^2.3.18",
     "intersection-observer": "^0.7.0",
-    "npm": "^6.14.2",
+    "npm": "^6.14.15",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
